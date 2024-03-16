@@ -15,3 +15,5 @@
     - Listening - понимание английской речи на слух, а также ответы на вопросы касающиеся ключевых моментов в беседе
     - Pronunciation - игра на выбор правильной транскрипции
     - Test - позволяет определить уровень английского по шкале от A1 до C1
+### Макет
+[Figma](https://www.figma.com/file/HXSRCOdic18614UCm3eDsU/ESC?type=design&node-id=0-1&mode=design&t=13CdYCLuO1pDpKWI-0)
