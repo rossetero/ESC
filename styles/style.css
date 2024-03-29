@@ -192,6 +192,8 @@ a {
 
 
 /*===================HEADER STYLES===================*/
+/*===================FOOTER STYLES===================*/
+
 
 .footer {
     padding: 0% 10%;
@@ -217,4 +219,7 @@ a {
 
 .footer .nav-menu li {
     padding: 10px;
+    margin: auto;
 }
+
+/*===================FOOTER STYLES===================*/
