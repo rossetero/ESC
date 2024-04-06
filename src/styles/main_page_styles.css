@@ -1,0 +1,174 @@
+
+.head, .footer {
+    height: 20px;
+    background-color: gray;
+}
+
+.top_margin {
+    margin-top: 94px;
+}
+
+.main {
+    padding: 0px 96px 0px 96px;
+    overflow: hidden;
+}
+
+.introduction {
+    position: relative;
+    border: 1px solid gray;
+}
+
+.introduction_img {
+    position: absolute;
+    right: -116px;
+    top: 0px;
+    height: 100%;
+    z-index: -1;
+    width: 70vw;
+    max-width: 720px;
+    display: flex;
+    align-items: center;
+}
+
+.introduction_img img {
+    display: block;
+    width: 100%;
+}
+
+.introduction_header {
+    font-size: 128px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    max-width: 756px;
+}
+
+.introduction_header_red {
+    color: red;
+}
+
+.introduction_p {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin-top: 42px;
+    max-width: 580px;
+}
+
+.schedule {
+    padding-top: 138px;
+    position: relative;
+    padding: 0px 0px 0px 170px;
+    border: 1px solid gray;
+}
+
+.schedule_header {
+    font-size: 96px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+}
+
+.schedule_header_red {
+    color: red;
+}
+
+.schedule_div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 32px;
+    padding-bottom: 130px;
+}
+
+.schedule_div_gap {
+    display: flex;
+    gap: 30px;
+}
+
+.schedule_info {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.schedule_img {
+    max-width: 760px;
+    max-height: 600px;
+    position: absolute;
+    top: 140px;
+    left: -96px;
+    z-index: -1;
+}
+
+.schedule_btnsection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.schedule_p {
+    width: 562px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-align: end;
+}
+
+.schedule_button {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    height: 80px;
+    width: 560px;
+    border: none;
+    border-radius: 18px;
+}
+
+.schedule_button:hover {
+    background-color: rgb(156, 0, 0);
+}
+
+.schedule_button:active {
+    background-color: rgb(85, 0, 0);
+}
+
+.schedule_button:focus {
+    border: none;
+}
+
+@media (max-width: 576px) {   
+    .introduction_header {
+        font-size: 32px;
+    }
+
+    .main {
+        padding: 0px 24px 0px 24px;
+    }
+
+    .introduction_p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {  
+    .introduction_header {
+        font-size: 64px;
+    } 
+
+    .main {
+        padding: 0px 32px 0px 32px;
+    }
+
+    .introduction_p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+    .introduction_header {
+        font-size: 96px;
+    }
+}
