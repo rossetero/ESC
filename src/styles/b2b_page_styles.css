@@ -14,19 +14,18 @@
 
 .intro {
     position: relative;
-    /* padding: 0px 20% 0px 20%; */
-    border: 1px solid gray;
+    margin-top: 60px;
 }
 
 .intro_div {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Выравнивание по центру по горизонтали */
+    justify-content: center;
     align-items: center;
 }
 
 .intro_div_h {
-    font-size: 96px;
+    font-size: 7vw;
     font-weight: 900;
     letter-spacing: 0.05em;
 }
@@ -36,7 +35,7 @@
 }
 
 .intro_div_p {
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 500;
     letter-spacing: 0.05em;
     margin-top: 30px;
@@ -64,18 +63,110 @@
 
 .intro_img_right img {
     display: block;
-    /* width: 25 vw; */
     width: 100%;
 }
 
 .benefits {
-    border: 1px solid gray;
+    position: relative;
+    margin-top: 8vw;
 }
 
 .benefits_p {
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 500;
     letter-spacing: 0.05em;
-    margin-top: 30px;
-    /* text-align: center; */
+}
+
+.pad_center {
+    padding-left: 30%;
+}
+
+.pad_right {
+    padding-left: 60%;
+}
+
+.benefits_punkt {
+    font-size: 1.5vw;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    width: 35vw;
+    padding-top: 3%;
+}
+
+.benefits_arrow {
+    position: absolute;
+    z-index: -1;
+    width: 8vw;
+}
+
+.down {
+    top: 52%;
+    left: 42%;
+}
+
+.up {
+    top: 85%;
+    left: 48%;
+}
+
+.invite {
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+}
+
+.invite_p {
+    font-size: 1.5vw;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    width: calc(100% - 42vw);
+}
+
+.invite_button {
+    font-size: 3vw;
+    letter-spacing: 0.05em;
+    color: white;
+    background-color: #C00000;
+    height: 5vw;
+    width: 40vw;
+    border: none;
+    border-radius: 18px;
+    margin-bottom: 7%;
+}
+
+.invite_button:hover {
+    background-color: rgb(156, 0, 0);
+}
+
+.invite_button:active {
+    background-color: rgb(85, 0, 0);
+}
+
+.invite_button:focus {
+    border: none;
+}
+
+.invite_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.invite_div_p {
+    font-size: 1.5vw;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    width: 40vw;
+}
+
+.invite_h {
+    font-size: 7vw;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    padding-top: 5vw;
+}
+
+@media (max-width: 1300px) {
+    .benefits_arrow {
+        display: none;
+    }
 }
