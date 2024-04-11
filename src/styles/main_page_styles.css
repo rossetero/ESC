@@ -42,10 +42,6 @@
     max-width: 756px;
 }
 
-.introduction_header_red {
-    color: red;
-}
-
 .introduction_p {
     font-size: 20px;
     font-weight: 500;
@@ -65,10 +61,6 @@
     font-size: 96px;
     font-weight: 900;
     letter-spacing: 0.05em;
-}
-
-.schedule_header_red {
-    color: red;
 }
 
 .schedule_div {
@@ -120,7 +112,7 @@
     font-weight: 500;
     letter-spacing: 0.05em;
     color: white;
-    background-color: rgb(255, 0, 0);
+    background-color: #C00000;
     height: 80px;
     width: 560px;
     border: none;
@@ -139,15 +131,86 @@
     border: none;
 }
 
+.whoweare {
+    position: relative;
+    border: 1px solid gray;
+}
+
+.whoweare_header {
+    font-size: 96px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+}
+
+.whoweare_info {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.whoweare_img {
+    width: 390px;
+}
+
+.whoweare_div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.whoweare_div_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.whoweare_div_div_p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.whoweare_div_div_number {
+    font-size: 96px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    width: 70px;
+    text-align: right;
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.whoweare_div_div_info {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    max-width: 590px;
+}
+
+.whoweare_div_div_header {
+    font-size: 96px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+}
+
+.red {
+    color: #C00000;
+}
+
 @media (max-width: 576px) {   
     .introduction_header {
         font-size: 32px;
     }
-
+    
     .main {
         padding: 0px 24px 0px 24px;
     }
-
+    
     .introduction_p {
         font-size: 12px;
     }

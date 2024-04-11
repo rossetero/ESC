@@ -1,0 +1,81 @@
+.head, .footer {
+    height: 20px;
+    background-color: gray;
+}
+
+.top_margin {
+    margin-top: 94px;
+}
+
+.main {
+    padding: 0px 96px 0px 96px;
+    overflow: hidden;
+}
+
+.intro {
+    position: relative;
+    /* padding: 0px 20% 0px 20%; */
+    border: 1px solid gray;
+}
+
+.intro_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Выравнивание по центру по горизонтали */
+    align-items: center;
+}
+
+.intro_div_h {
+    font-size: 96px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+}
+
+.red {
+    color: #C00000;
+}
+
+.intro_div_p {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.intro_img_left {
+    position: absolute;
+    width: 30vw;
+    left: -96px;
+    z-index: -1;
+}
+
+.intro_img_left img {
+    display: block;
+    width: 100%;
+}
+
+.intro_img_right {
+    position: absolute;
+    width: 30vw;
+    right: -96px;
+    z-index: -1;
+}
+
+.intro_img_right img {
+    display: block;
+    /* width: 25 vw; */
+    width: 100%;
+}
+
+.benefits {
+    border: 1px solid gray;
+}
+
+.benefits_p {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin-top: 30px;
+    /* text-align: center; */
+}
