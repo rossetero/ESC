@@ -5,7 +5,7 @@ import Main from './main_page'
 import Price from './pricelist'
 const App = () => {
   return (
-    <Price />
+    <Main />
   );
 };
 
