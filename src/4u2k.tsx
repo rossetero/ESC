@@ -1,6 +1,11 @@
 import React from 'react';
+<<<<<<< HEAD
 import './styles/style.css'
 //import {book} from './assets/4u2k'
+=======
+import './styles/price_4u2k_styles.css'
+
+>>>>>>> develop_svetlana
 const u2k = () => {
   return (
     <>
@@ -101,7 +106,7 @@ const u2k = () => {
 
             <div>
                 <p>follow us</p>
-                <img width="40" height="40" src="../assets/footer/tg.png" alt="Контакт в Telegram"/>
+                <img width="40" height="40" src={require("./assets/footer/tg.png")} alt="Контакт в Telegram"/>
             </div>
 
             <div>
@@ -109,7 +114,7 @@ const u2k = () => {
                 <ul className="nav-menu">
                     <li>Нет вопросов? Запишись.</li>
                     <li>Есть вопросы? Позвони.</li>
-                    <li><img width="20" height="20" src="../assets/footer/phone.png" alt="Номер телефона" /> +7 (930) 71
+                    <li><img width="20" height="20" src={require("./assets/footer/phone.png")} alt="Номер телефона" /> +7 (930) 71
                         61
                         910
                     </li>
