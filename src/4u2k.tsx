@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/style.css'
-import book from '../assets/4u2k/book.png'
+import './styles/style.css'
+//import {book} from './assets/4u2k'
 const u2k = () => {
   return (
     <>
@@ -36,7 +36,7 @@ const u2k = () => {
                         именно тебе, <br/> и
                         присоединяйся к нашей дружной компании!</p>
                 </div>
-                <img width="523.4" height="412" src="../assets/4u2k/book.png" alt="" />
+                <img width="523.4" height="412" src={require('./assets/4u2k/book.png')} alt="" />
             </header>
 
             <section className="content-section">
