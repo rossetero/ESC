@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/style.css'
-import './styles/header_footer_styles.css'
 import './styles/b2b_page_styles.css'
+import './styles/header_footer_styles.css'
 const b2b_page = () => {
     return (
         <>
@@ -22,13 +22,13 @@ const b2b_page = () => {
                     </nav>
                 </header>
 
-                <main className="main">
+                <main className="main_b2b">
                     <section className="intro">
                         <div>
-                            <img className="intro_img_left" src={require('./assets/images/left_hand.png')} alt="открытая рука для рукопожатия" />
+                            <img className="intro_img_left" src={require('./assets/main_page/left_hand.png')} alt="открытая рука для рукопожатия" />
                         </div>
                         <div>
-                            <img className="intro_img_right" src={require('./assets/images/right_hand.png')} alt="открытая рука для рукопожатия" />
+                            <img className="intro_img_right" src={require('./assets/main_page/right_hand.png')} alt="открытая рука для рукопожатия" />
                         </div>
 
                         <div className="intro_div">
@@ -52,8 +52,8 @@ const b2b_page = () => {
                             могут стать вашими постоянными клиентами.</p>
                         <p className="benefits_punkt pad_right">И, наконец, <span className="red">продвижение</span> вас как места, поддерживающего
                             образовательные и культурные инициативы.</p>
-                        <img className="benefits_arrow down" src={require('./assets/images/arrow_down.png')} alt="стрелка к следующему пункту" />
-                        <img className="benefits_arrow up" src={require('./assets/images/arrow_up.png')} alt="стрелка к следующему пункту" />
+                        <img className="benefits_arrow down" src={require('./assets/main_page/arrow_down.png')} alt="стрелка к следующему пункту" />
+                        <img className="benefits_arrow up" src={require('./assets/main_page/arrow_up.png')} alt="стрелка к следующему пункту" />
                     </section>
 
                     <section className="invite">
@@ -98,14 +98,14 @@ const b2b_page = () => {
 
                     <div>
                         <p>follow us</p>
-                        <img width="40" height="40" src={require('../assets/footer/tg.png')} alt="Контакт в Telegram" />
+                        <img width="40" height="40" src={require('./assets/footer/tg.png')} alt="Контакт в Telegram" />
                     </div>
 
                     <div>
                         <ul className="nav-menu">
                             <li>Нет вопросов? Запишись.</li>
                             <li>Есть вопросы? Позвони.</li>
-                            <li><img width="20" height="20" src={require('../assets/footer/phone.png')} alt="Номер телефона" /> +7 (930) 71
+                            <li><img width="20" height="20" src={require('./assets/footer/phone.png')} alt="Номер телефона" /> +7 (930) 71
                                 61
                                 910
                             </li>
