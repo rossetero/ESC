@@ -1,11 +1,6 @@
 import React from 'react';
-<<<<<<< HEAD
-import './styles/style.css'
-//import {book} from './assets/4u2k'
-=======
 import './styles/price_4u2k_styles.css'
 
->>>>>>> develop_svetlana
 const u2k = () => {
   return (
     <>
