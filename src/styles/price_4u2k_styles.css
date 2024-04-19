@@ -157,7 +157,7 @@ a {
 
 
 
- .header {
+.header {
     padding: 0% 10%;
     display: flex;
     flex-wrap: wrap;
@@ -168,11 +168,11 @@ a {
     font-size: 24px;
 }
 
+
 .logo {
     font-weight: 900;
-    font-size: 96px;
+    font-size: 7vw;
     letter-spacing: 0.05em;
-    height: 106px;
 }
 
 

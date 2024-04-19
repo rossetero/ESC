@@ -1,7 +1,11 @@
 import styled from "@emotion/styled"
-import { css } from '@emotion/react'
+
 
 export const StyledLink = styled.a`
     text-decoration: none;
-    color: #000000
+    color: #000000;
+    &:hover{
+        color: #7E7E7E;
+        text-decoration: underline;
+    }
 `;

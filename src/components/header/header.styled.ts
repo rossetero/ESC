@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 import { css } from '@emotion/react'
 
-export const HeaderStyle = styled.header`
+export const StyledHeader = styled.header`
     padding: 0px 96px 0px 96px;
     display: flex;
     flex-wrap: wrap;

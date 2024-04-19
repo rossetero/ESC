@@ -4,7 +4,7 @@ import { StyledLink } from './link.styled'
 
 export const Link = (props) => {
     return (
-        <StyledLink contrast={props.contrast} href={props.href}>
+        <StyledLink href={props.href}>
             {props.children}
         </StyledLink>
     );

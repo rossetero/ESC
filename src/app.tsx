@@ -8,7 +8,7 @@ import Games from './games'
 import Price from './pages/price_page'
 const App = () => {
     return (
-        <B2B />
+        <Price />
     );
 };
 

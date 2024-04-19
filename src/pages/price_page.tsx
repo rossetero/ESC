@@ -1,5 +1,10 @@
 import React from "react"
-import './styles/price_4u2k_styles'
+import '../styles/price_4u2k_styles'
+import '../styles/main'
+import { Link } from '../components/link'
+import { NavPanel } from "../components/nav-panel";
+import { Caption } from "../components/caption";
+import { Header } from "../components/header";
 const pricelist = () => {
     return (
         <>
@@ -7,23 +12,14 @@ const pricelist = () => {
 
 
 
-                <header className="header">
+                {/* <header className="header">
 
-                    <h1 className="logo">
-                        <span className="red_letter">e</span>sc
-                    </h1>
-                    <nav>
-                        <ul className="nav-menu">
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">prices</a></li>
-                            <li><a href="4u2k.html">4u2k</a></li>
-                            <li><a href="#">games</a></li>
-                            <li><a href="#">b2b</a></li>
+                    <Caption><h1><span>e</span>sc</h1></Caption>
+                    <NavPanel />
 
-                        </ul>
-                    </nav>
 
-                </header>
+                </header> */}
+                <Header />
 
 
 
@@ -31,9 +27,9 @@ const pricelist = () => {
                 <main className="main">
 
                     <header className="pheader">
-                        <img width="606" height="472" src={require("./assets/prices/handmoney.png")} alt="" />
+                        <img width="606" height="472" src={require("../assets/prices/handmoney.png")} alt="" />
                         <div>
-                            <h1 className="logo">OUR<span className="red_letter"> PRICES</span></h1>
+                            <Caption><h1>OUR<span> PRICES</span></h1></Caption>
                             <p>Разовая встреча на “попробовать”? <br /> Две проходки - себе и другу? <br /> По две каждому? <br /> А
                                 может, абонемент
                                 на пять встреч? <br /> Так много опций... <br />
@@ -94,7 +90,7 @@ const pricelist = () => {
                 <footer className="footer">
                     <div>
                         <div className="logo">
-                            <span className="red_letter">e</span>sc
+                            <Caption><h1><span>e</span>sc</h1></Caption>
                         </div>
                         <p className="copyright">©ESC 2024 <br /> All rights reserved</p>
                     </div>
@@ -116,7 +112,7 @@ const pricelist = () => {
 
                     <div>
                         <p>follow us</p>
-                        <img width="40" height="40" src={require("./assets/footer/tg.png")} alt="Контакт в Telegram" />
+                        <img width="40" height="40" src={require("../assets/footer/tg.png")} alt="Контакт в Telegram" />
                     </div>
 
                     <div>
@@ -124,7 +120,7 @@ const pricelist = () => {
                         <ul className="nav-menu">
                             <li>Нет вопросов? Запишись.</li>
                             <li>Есть вопросы? Позвони.</li>
-                            <li><img width="20" height="20" src={require("./assets/footer/phone.png")} alt="Номер телефона" /> +7 (930) 71 61
+                            <li><img width="20" height="20" src={require("../assets/footer/phone.png")} alt="Номер телефона" /> +7 (930) 71 61
                                 910
                             </li>
 
