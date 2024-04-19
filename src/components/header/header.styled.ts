@@ -1,6 +1,7 @@
 import styled from "@emotion/styled"
 import { css } from '@emotion/react'
 
+
 export const StyledHeader = styled.header`
     padding: 0px 96px 0px 96px;
     display: flex;
@@ -11,5 +12,4 @@ export const StyledHeader = styled.header`
     align-items: center;
     font-size: 2vw;
     height: 8vw;
-
 `;

@@ -7,10 +7,10 @@ export const Header = () => {
     return (
         <header>
             <StyledHeader>
-                <Caption><h1><span>e</span>sc</h1></Caption>
-                <NavPanel />
+                <Caption hide><h1><span>e</span>sc</h1></Caption>
+                <NavPanel header />
             </StyledHeader>
 
-        </header >
+        </header>
     )
 };

@@ -5,20 +5,13 @@ import { Link } from '../components/link'
 import { NavPanel } from "../components/nav-panel";
 import { Caption } from "../components/caption";
 import { Header } from "../components/header";
+import { Footer } from "../components/footer";
 const pricelist = () => {
     return (
         <>
             <body>
 
 
-
-                {/* <header className="header">
-
-                    <Caption><h1><span>e</span>sc</h1></Caption>
-                    <NavPanel />
-
-
-                </header> */}
                 <Header />
 
 
@@ -87,28 +80,16 @@ const pricelist = () => {
 
 
 
-                <footer className="footer">
+                {/* <footer className="footer">
                     <div>
                         <div className="logo">
-                            <Caption><h1><span>e</span>sc</h1></Caption>
+                            <Caption hide><h1><span>e</span>sc</h1></Caption>
                         </div>
                         <p className="copyright">©ESC 2024 <br /> All rights reserved</p>
                     </div>
 
-                    <nav>
-                        <ul className="nav-menu">
-                            <li><a href="second.html">home</a></li>
-                            <li><a href="#">prices</a></li>
-                            <li><a href="#">4u2k</a></li>
-                        </ul>
-                    </nav>
 
-                    <nav>
-                        <ul className="nav-menu">
-                            <li><a href="#">games</a></li>
-                            <li><a href="#">b2b</a></li>
-                        </ul>
-                    </nav>
+                    <NavPanel></NavPanel>
 
                     <div>
                         <p>follow us</p>
@@ -129,7 +110,8 @@ const pricelist = () => {
 
                     </div>
 
-                </footer>
+                </footer> */}
+                <Footer />
 
 
             </body>

@@ -139,17 +139,9 @@ table {
 
 body {
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    font-size: var(--default-font-size);
 }
 
-a {
-    text-decoration: none;
-    color: #000000
-}
-
-.red_letter {
-    color: #C00000
-}
 
 /*===================COMMON STYLE===================*/
 

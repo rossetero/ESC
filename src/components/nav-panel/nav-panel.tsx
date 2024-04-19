@@ -8,12 +8,14 @@ const navList = [
     { title: "prices", href: "#02" },
     { title: "4u2k", href: "#03" },
     { title: "b2b", href: "#04" },
+    { title: "games", href: "#05" },
 ];
 
 export const NavPanel = (props) => {
+    const isHeader = props.header === true;
     return (
         <nav>
-            <StyledPanel>
+            <StyledPanel header={props.header}>
 
                 {navList.map((element, index) => (
                     <li key={element.href}>
