@@ -5,7 +5,7 @@ import { css } from '@emotion/react'
 export const StyledCaption = styled.div`
     h1{
     font-weight: 900;
-    font-size: ${(props) => (props.footer ? '5vw' : '7vw')};
+    font-size: ${(props: any) => (props.footer ? '5vw' : '7vw')};
     letter-spacing: 0.05em;
     }
     span{
