@@ -12,6 +12,12 @@ export const StyledCaption = styled.div`
         color: var(--text-red);
     }
 
+    h2 {
+    font-weight: 900;
+    font-size: 2vw;
+    letter-spacing: 0.05em;
+    text-align: justify;
+}
 
 
     ${(props: any) => {

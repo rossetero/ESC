@@ -135,7 +135,11 @@ table {
 /*===================STYLE RESET===================*/
 
 /*===================COMMON STYLE===================*/
-
+:root {
+    --text-red: #C00000;
+    --secondary-color: #D9D9D9;
+    --default-font-size: 1.5vw;
+}
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -147,7 +151,7 @@ a {
 }
 
 .red_letter {
-    color: #C00000
+    color: var(--text-red);
 }
 
 /*===================COMMON STYLE===================*/
