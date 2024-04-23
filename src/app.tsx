@@ -6,9 +6,13 @@ import ABC from './abc'
 import DoUHearMe from './douhearme'
 import Games from './games'
 import Price from './pages/price_page'
+import './styles/main'
+import { ClientContactForm } from './components/client-contact-form'
 const App = () => {
     return (
-        <U2k />
+        <body>
+            < Price />
+        </body>
     );
 };
 
