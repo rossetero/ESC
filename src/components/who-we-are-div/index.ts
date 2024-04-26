@@ -1,0 +1,1 @@
+export { WhoWeAreDiv } from './who-we-are-div';

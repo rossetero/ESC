@@ -135,23 +135,19 @@ table {
 /*===================STYLE RESET===================*/
 
 /*===================COMMON STYLE===================*/
-:root {
-    --text-red: #C00000;
-    --secondary-color: #D9D9D9;
-    --default-font-size: 1.5vw;
-}
 
+
+/* body {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--default-font-size);
+} */
 body {
     font-family: "Montserrat", sans-serif;
+    font-size: var(--default-font-size);
+    font-weight: 500;
 }
 
-a {
-    text-decoration: none;
-    color: #000000
+.main {
+    padding: 0px 96px 0px 96px;
+    overflow: hidden;
 }
-
-.red_letter {
-    color: var(--text-red);
-}
-
-/*===================COMMON STYLE===================*/

@@ -1,15 +1,16 @@
-import React from 'react';
-import U2k from './4u2k_page'
-import B2B from './b2b_page'
-import Main from './main_page'
-import ABC from './abc'
-import DoUHearMe from './douhearme'
-import Games from './games'
-import Price from './price_page'
+import React from 'react'
+import U2k from './pages/4u2k-page'
+import B2B from './pages/b2b-page'
+import Main from './pages/main-page'
+import Games from './pages/games'
+import Price from './pages/price-page'
+import './styles/main'
 const App = () => {
-  return (
-    <Main />
-  );
+    return (
+        <body>
+            <Games />
+        </body>
+    );
 };
 
 export default App;
