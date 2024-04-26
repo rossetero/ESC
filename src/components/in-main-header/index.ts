@@ -1,0 +1,1 @@
+export { InMainHeader } from './in-main-header'
