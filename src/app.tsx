@@ -8,7 +8,7 @@ import './styles/main'
 const App = () => {
     return (
         <body>
-            <Games />
+            <Price />
         </body>
     );
 };
