@@ -1,13 +1,8 @@
 /*===================STYLE RESET===================*/
-
-
 html,
 body,
 div,
 span,
-applet,
-object,
-iframe,
 h1,
 h2,
 h3,
@@ -90,7 +85,6 @@ video {
     vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -131,12 +125,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
 /*===================STYLE RESET===================*/
 
 /*===================COMMON STYLE===================*/
-
-
 body {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
@@ -150,13 +141,9 @@ a {
 .red_letter {
     color: #C00000
 }
-
 /*===================COMMON STYLE===================*/
 
 /*===================HEADER STYLES===================*/
-
-
-
 .header {
     padding: 0% 10%;
     display: flex;
@@ -175,9 +162,6 @@ a {
     height: 106px;
 }
 
-
-
-
 .nav-menu {
     display: flex;
     flex-wrap: wrap;
@@ -190,13 +174,9 @@ a {
 .nav-menu li {
     margin-right: 70px;
 }
-
-
-
 /*===================HEADER STYLES===================*/
+
 /*===================FOOTER STYLES===================*/
-
-
 .footer {
     padding: 0% 10%;
     height: 204px;
@@ -221,36 +201,17 @@ a {
 .footer .nav-menu li {
     padding: 10px;
     margin: auto;
-
 }
-
 /*===================FOOTER STYLES===================*/
 
-
-
+/*===================MAIN STYLES===================*/
 .main {
     margin: 0% 10%;
 }
+/*===================MAIN STYLES===================*/
 
-.pheader {
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
-
-.u2kheader {
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap-reverse;
-
-}
-
-.prices {
+/*===================GAMES UNIQUE STYLES===================*/
+.games {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -258,7 +219,7 @@ a {
     margin-bottom: 3%;
 }
 
-.prices h2 {
+.games h2 {
     font-weight: 900;
     font-size: 48px;
     letter-spacing: 0.05em;
@@ -271,35 +232,24 @@ a {
     border-width: 5px;
 }
 
-
-
-.prices div {
+.games div {
     margin: 3% 3%;
     padding: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     background-color: #D9D9D9;
     border-radius: 21px;
-
 }
 
-.prices .one_time {
+.games .one_time {
     background-color: #ffffff;
     border-style: solid;
     border-color: #D9D9D9;
     border-width: 5px;
 }
 
-.price_tag {
-    font-weight: 500;
-    font-size: 32px;
-    letter-spacing: 0.05em;
-    color: #000;
-}
-
-.prices .flex-item {
+.games .flex-item {
     margin-bottom: 35px;
 }
 
@@ -307,73 +257,43 @@ a {
     margin-bottom: 5%;
 }
 
-.section-title {
-    font-weight: 900;
-    font-size: 40px;
-    letter-spacing: 0.05em;
-    text-align: justify;
-}
-
-.content-section {
-    margin: 8% 0%;
-}
-
-.content {
-    margin-top: 1.5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.content img {
-    margin-right: 10px;
-}
-
-
-
-
-
-
-
-/*===================GAMES UNIQUE STYLES===================*/
-
 .gamesheader {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .gamesheader div {
-    text-align: center; 
-    margin-bottom: 30px; /* отступ снизу для выравнивания по центру */
+    text-align: center;
+    margin-bottom: 30px;
 }
-
 
 .gamesheader .logo {
     font-weight: 900;
     font-size: 96px;
     letter-spacing: 0.05em;
     display: flex;
-    align-items: center; /* Центрирование текста и красной буквы */
+    align-items: center;
 }
+
 .gamesheader2 .logo {
     font-weight: 900;
     font-size: 44px;
     letter-spacing: 0.05em;
     display: flex;
-    align-items: center; /* Центрирование текста и красной буквы */
+    align-items: center;
 }
 
 .gamesheader2 .logo .red_letter {
     font-size: 44px;
-    margin-left: 20px; /* Отступ между словами "OUR" и "GAMES" */
+    margin-left: 20px;
 }
 
 .gamesheader .logo .red_letter {
     font-size: 96px;
-    margin-left: 20px; /* Отступ между словами "OUR" и "GAMES" */
+    margin-left: 20px;
 }
 
 .gamesheader .image-container {
-    margin-left: auto; /* Отступ справа для контейнера с изображением */
+    margin-left: auto;
 }
