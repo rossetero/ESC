@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/style.css'
-import '../styles/main_page_styles.css'
+import '../styles/main-page-styles.css'
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
 import { InviteButton } from '../components/invite-button';

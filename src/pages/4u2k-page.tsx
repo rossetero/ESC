@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/price_4u2k_styles.css'
+import '../styles/price-4u2k-styles.css'
 import '../styles/main'
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';

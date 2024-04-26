@@ -1,5 +1,5 @@
 import React from "react"
-import '../styles/price_4u2k_styles'
+import '../styles/price-4u2k-styles'
 import '../styles/main'
 import { Caption } from "../components/caption";
 import { Header } from "../components/header";
@@ -11,7 +11,7 @@ const pricelist = () => {
     return (
         <>
             <Header />
-            {/* стиль этого мейна можно оставить в cssке */}
+            
             <main className="main">
 
                 <InMainHeader>

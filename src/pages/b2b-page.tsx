@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/style.css'
-import '../styles/b2b_page_styles.css'
+import '../styles/b2b-page-styles.css'
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
 import { InviteButton } from '../components/invite-button';

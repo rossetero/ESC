@@ -38,7 +38,7 @@ export const GamesBlock = () => {
                         <StyledGameHeader>
                             <StyledLogo>
                                 <a href={game.link} className="red_letter">{game.title}</a>
-                                <StyledImage src={game.image} /> {/* Используем стилизованное изображение */}
+                                {/* <StyledImage src={game.image} /> Используем стилизованное изображение */}
                             </StyledLogo>
                         </StyledGameHeader>
                         <StyledFlexItem>

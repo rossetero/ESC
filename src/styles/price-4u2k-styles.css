@@ -141,7 +141,11 @@ table {
     font-family: "Montserrat", sans-serif;
     font-size: var(--default-font-size);
 } */
-
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--default-font-size);
+    font-weight: 500;
+}
 
 .main {
     padding: 0px 96px 0px 96px;

@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { StyledClientContactForm } from './client-contact-form.styled'
 import InputMask from 'react-input-mask';
-
+import { InviteButton } from "../invite-button";
 interface ClientContactFormProps {
     isOpen: boolean;
     onClose: () => void;
@@ -103,7 +103,7 @@ export const ClientContactForm: React.FC<ClientContactFormProps> = ({ isOpen, on
                     <option value="4">5000₽ - личный спикинг клаб</option>
                 </select>
             </div>
-            <button type="submit">Submit</button>
+            <button>Отправить</button>
         </StyledClientContactForm>
     );
 };
