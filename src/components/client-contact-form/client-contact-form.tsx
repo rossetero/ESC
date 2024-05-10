@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { StyledClientContactForm } from './client-contact-form.styled'
 import InputMask from 'react-input-mask';
-import { InviteButton } from "../invite-button";
 interface ClientContactFormProps {
     isOpen: boolean;
     onClose: () => void;
@@ -54,12 +53,12 @@ export const ClientContactForm: React.FC<ClientContactFormProps> = ({ isOpen, on
     // Обработчик отправки формы
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        // Действия при отправке формы, например, отправка данных на сервер
-        console.log('Submitted:', { name, telegram, phone });
+        // Ваши действия с данными формы здесь
+        console.log('Submitted:', { name, telegram, phone, selectedOption });
     };
 
     return (
-        <StyledClientContactForm ref={modalRef} onSubmit={handleSubmit}>
+        <StyledClientContactForm ref={modalRef} onSubmit={handleSubmit as any}>
             <span className="close" onClick={onClose}>&times;</span>
             <h1><span>welcome</span><br />
                 в спикинг клаб!</h1>
