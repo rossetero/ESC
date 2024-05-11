@@ -5,10 +5,10 @@ import { StyledPanel } from './nav-panel.styled'
 
 const navList = [
   { title: "home", href: "/esc" },
-  { title: "prices", href: "/esc/b2b" },
+  { title: "prices", href: "/esc/pricelist" },
   { title: "4u2k", href: "/esc/4u2k" },
-  { title: "b2b", href: "/esc/games" },
-  { title: "games", href: "/esc/pricelist" },
+  { title: "b2b", href: "/esc/b2b" },
+  { title: "games", href: "/esc/games" },
 ];
 
 export const NavPanel = (props) => {
