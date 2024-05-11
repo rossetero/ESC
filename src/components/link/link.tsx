@@ -1,11 +1,14 @@
 import React from "react";
 
 import { StyledLink } from './link.styled'
+import { Link as ConnectedLink } from 'react-router-dom'
 
 export const Link = (props) => {
-    return (
-        <StyledLink href={props.href}>
-            {props.children}
-        </StyledLink>
-    );
+  return (
+    <ConnectedLink to={props.href}>
+      <StyledLink >
+        {props.children}
+      </StyledLink>
+    </ConnectedLink>
+  );
 };
