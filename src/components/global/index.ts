@@ -1,1 +1,0 @@
-export { StGlobal } from './global'
