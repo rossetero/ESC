@@ -1,4 +1,7 @@
-/*===================STYLE RESET===================*/
+import { css } from "@emotion/react";
+
+export const GlobalStyle = css`
+
 
 
 html,
@@ -82,12 +85,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -102,56 +105,48 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/*===================STYLE RESET===================*/
 
-/*===================COMMON STYLE===================*/
-:root {
-    --text-red: #C00000;
-    --secondary-color: #D9D9D9;
-    --default-font-size: 1.5vw;
+:root{
+  --text-red: #C00000;
+--secondary-color: #D9D9D9;
+--default-font-size: 1.5vw;
 }
 
-body {
-    font-family: "Montserrat", sans-serif;
-}
+body{
+font-family: "Montserrat", sans-serif;
+font-size: var(--default-font-size);
+font-weight: 500;
 
-a {
-    text-decoration: none;
-    color: #000000
 }
-
-.red_letter {
-    color: var(--text-red);
-}
-
-/*===================COMMON STYLE===================*/
+  
+`;

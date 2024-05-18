@@ -5,10 +5,12 @@ import { Link as ConnectedLink } from 'react-router-dom'
 
 export const Link = (props) => {
   return (
-    <ConnectedLink to={props.href}>
-      <StyledLink >
+    <StyledLink >
+      <ConnectedLink to={props.href}>
+
         {props.children}
-      </StyledLink>
-    </ConnectedLink>
+
+      </ConnectedLink>
+    </StyledLink>
   );
 };

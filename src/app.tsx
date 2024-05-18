@@ -6,10 +6,14 @@ import Main from './pages/main-page'
 import Games from './pages/games'
 import Price from './pages/price-page'
 import NotFound from './pages/not-found'
-import './styles/main'
+import { GlobalStyle } from './global'
+import { Global } from '@emotion/react'
+// import './styles/main'
 const App = () => {
   return (
+
     <Router>
+      <Global styles={GlobalStyle} />
       <Routes>
         <Route path="/esc" Component={Main} />
         <Route path="/esc/b2b" Component={B2B} />
@@ -19,6 +23,7 @@ const App = () => {
         <Route path="/esc/*" Component={NotFound} />
       </Routes>
     </Router>
+
   );
 };
 

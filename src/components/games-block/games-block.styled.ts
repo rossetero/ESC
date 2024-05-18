@@ -28,6 +28,7 @@ export const StyledGameHeader = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px; /* Добавляем отступ снизу */
 `;
 
 export const StyledLogo = styled.div`

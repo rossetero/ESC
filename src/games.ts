@@ -1,4 +1,9 @@
-/*===================STYLE RESET===================*/
+import { css } from "@emotion/react";
+
+export const GamesStyle = css`
+
+
+
 html,
 body,
 div,
@@ -297,3 +302,24 @@ a {
 .gamesheader .image-container {
     margin-left: auto;
 }
+
+:root {
+    --text-red: #C00000;
+    --secondary-color: #D9D9D9;
+    --default-font-size: 1.5vw;
+}
+
+@font-face {
+    font-family: 'Monserrat';
+    src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf') format('tff'),
+        url('../assets/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('tff');
+    /* Дополнительные форматы шрифтов, если есть */
+}
+
+body {
+    font-family: 'Monserrat', sans-serif;
+    font-size: var(--default-font-size);
+    font-weight: 500;
+}
+
+`;
