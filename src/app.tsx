@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import U2k from './pages/4u2k-page'
 import B2B from './pages/b2b-page'
 import Main from './pages/main-page'

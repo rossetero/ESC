@@ -12,12 +12,11 @@ const navList = [
 ];
 
 export const NavPanel = (props) => {
-  const isHeader = props.header === true;
   return (
     <nav>
       <StyledPanel header={props.header}>
 
-        {navList.map((element, index) => (
+        {navList.map((element) => (
           <li key={element.href}>
             <Link href={element.href}>{element.title}</Link>
           </li>
