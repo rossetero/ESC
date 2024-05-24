@@ -1,0 +1,1 @@
+export { MainWhoWeAre } from './main-who-we-are';

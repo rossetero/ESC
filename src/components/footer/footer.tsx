@@ -3,7 +3,11 @@ import { NavPanel } from "../nav-panel";
 import { Caption } from "../caption";
 import { StyledFooter } from "./footer.styled";
 
-export const Footer = () => {
+interface FooterProps {
+    noMargin?: boolean;
+}
+
+export const Footer: React.FC<FooterProps> = ({ noMargin }) => {
     return (
         <StyledFooter>
 

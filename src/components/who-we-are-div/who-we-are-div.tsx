@@ -1,29 +1,36 @@
 import React from "react";
+import {
+  StyledGlobalDiv,
+  StyledDiv,
+  StyledH2,
+  StyledP,
+  StyledRed,
+  StyledLosung
+} from "./who-we-are-div.styled";
 
 export const WhoWeAreDiv = () => {
   return (
-    <div className="whoweare_div_div">
-      <div className="whoweare_div_div_p">
-        <h2 className="whoweare_div_div_number">1</h2>
-        <p className="whoweare_div_div_info">Мы создаем пространство, где каждый чувствует себя <span
-          className="red">комфортно</span> и готов общаться.</p>
-      </div>
-      <div className="whoweare_div_div_p">
-        <h2 className="whoweare_div_div_number">2</h2>
-        <p className="whoweare_div_div_info">Мы проводим встречи в разных местах, чтобы каждый мог выбрать
-          то, что ему больше <span className="red">нравится.</span></p>
-      </div>
-      <div className="whoweare_div_div_p">
-        <h2 className="whoweare_div_div_number">3</h2>
-        <p className="whoweare_div_div_info">Наши встречи ориентированы на <span className="red">практику </span>
-          английского языка, а не занудную теорию.</p>
-      </div>
-      <div className="whoweare_div_div_p">
-        <h2 className="whoweare_div_div_number">4</h2>
-        <p className="whoweare_div_div_info">Здесь ты найдешь тех самых <span className="red">интересных </span>
-          людей с которыми так здорово проводить время вместе.</p>
-      </div>
-      <h2 className="whoweare_div_div_header"><span className="red">HEY,</span> LET&apos;S GO</h2>
-    </div>
+    <StyledGlobalDiv>
+      <StyledDiv>
+        <StyledH2>1</StyledH2>
+        <StyledP>Мы создаем пространство, где каждый чувствует себя <StyledRed>комфортно</StyledRed> и готов общаться.</StyledP>
+      </StyledDiv>
+      <StyledDiv>
+        <StyledH2>2</StyledH2>
+        <StyledP>Мы проводим встречи в разных местах, чтобы каждый мог выбрать
+          то, что ему больше <StyledRed>нравится.</StyledRed></StyledP>
+      </StyledDiv>
+      <StyledDiv>
+        <StyledH2>3</StyledH2>
+        <StyledP>Наши встречи ориентированы на <StyledRed>практику </StyledRed>
+          английского языка, а не занудную теорию.</StyledP>
+      </StyledDiv>
+      <StyledDiv>
+        <StyledH2>4</StyledH2>
+        <StyledP>Здесь ты найдешь тех самых <StyledRed>интересных </StyledRed>
+          людей с которыми так здорово проводить время вместе.</StyledP>
+      </StyledDiv>
+      <StyledLosung><StyledRed>HEY,</StyledRed> LET&apos;S GO</StyledLosung>
+    </StyledGlobalDiv>
   );
 }
