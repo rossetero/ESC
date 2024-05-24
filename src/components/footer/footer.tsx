@@ -3,21 +3,15 @@ import { NavPanel } from "../nav-panel";
 import { Caption } from "../caption";
 import { StyledFooter } from "./footer.styled";
 
-interface FooterProps {
-    noMargin?: boolean;
-}
-
-export const Footer: React.FC<FooterProps> = ({ noMargin }) => {
+export const Footer = (props) => {
     return (
-        <StyledFooter>
+        <StyledFooter noMargin={props.noMargin}>
 
             <div>
-
                 <Caption hide footer><h1><span>e</span>sc</h1></Caption>
 
                 <p className="copyright">©ESC 2024 <br /> All rights reserved</p>
             </div>
-
 
             <NavPanel></NavPanel>
 
@@ -27,7 +21,6 @@ export const Footer: React.FC<FooterProps> = ({ noMargin }) => {
             </div>
 
             <div>
-
                 <ul className="contact">
                     <li>Нет вопросов? Запишись.</li>
                     <li>Есть вопросы? Позвони.</li>
@@ -35,9 +28,7 @@ export const Footer: React.FC<FooterProps> = ({ noMargin }) => {
                         910
                     </li>
                 </ul>
-
             </div>
-
 
         </StyledFooter>
     )

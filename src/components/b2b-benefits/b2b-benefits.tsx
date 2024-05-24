@@ -6,7 +6,6 @@ import {
     StyledRed,
     StyledImg
 } from "./b2b-benefits.styled";
-import { WhoWeAreDiv } from "../who-we-are-div";
 
 export const B2BBenefits = () => {
     return (

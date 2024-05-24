@@ -12,7 +12,7 @@ export const StyledFooter = styled.footer<StyledFooterProps>`
     align-items: center;
     justify-content: space-between;
     font-size: 1vw;
-    styled.footer<StyledFooterProps>
+    margin-top: ${props => (props.noMargin ? '0%' : '5%')};
     .contact{
         display:block;
     }
