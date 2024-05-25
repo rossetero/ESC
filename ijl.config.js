@@ -10,8 +10,10 @@ module.exports = {
   /* use https://kc.admin.inno-js.ru/ to create config, navigations and features */
   navigations: {
     'esc.main': '/esc',
-    'esc.games': 'esc/games',
-    'esc.4u2k': 'esc/4u2k'
+    'esc.games': '/games',
+    'esc.4u2k': '/4u2k',
+    'esc.prices': '/prices',
+    'esc.b2b':'/b2b',
   },
   features: {
     'esc': {

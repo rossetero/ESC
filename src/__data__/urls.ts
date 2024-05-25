@@ -15,7 +15,15 @@ export const URLs = {
         u2k:{
             url:`${baseUrl}${getNavigationsValue('esc.4u2k')}`,
             on:Boolean(getNavigationsValue('esc.4u2k')),
-        }
+        },
+        b2b:{
+            url:`${baseUrl}${getNavigationsValue('esc.b2b')}`,
+            on:Boolean(getNavigationsValue('esc.b2b')),
+        }, 
+        prices:{
+            url:`${baseUrl}${getNavigationsValue('esc.prices')}`,
+            on:Boolean(getNavigationsValue('esc.prices')),
+        },
     },
     api:{
         main:getConfigValue('esc.api')
