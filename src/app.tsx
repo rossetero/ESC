@@ -8,7 +8,7 @@ import Price from './pages/price-page'
 import NotFound from './pages/not-found'
 import { GlobalStyle } from './global'
 import { Global } from '@emotion/react'
-// import './styles/main'
+// url ui ... 
 const App = () => {
   return (
 

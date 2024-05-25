@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 
+import { URLs } from "../__data__/urls";
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
 import { InMainHeader } from '../components/in-main-header';
@@ -8,43 +9,16 @@ import { ContentSection } from '../components/content-section';
 import { Main1 } from '../components/common';
 
 
-const u2kData = [
-  {
-    type: "video",
-    links: {
-      l1: "https://www.youtube.com/embed/DsQMLrPdLf8?si=l9X57nHqaSYlxDFf",
-      l2: "https://www.youtube.com/embed/Dk8AAU_UdVk?si=N8NdYMUCfawdsJGE",
-      l3: "https://www.youtube.com/embed/HKfDfWrCwEA?si=qPugjiKR8V9eZ-yG",
-      l4: "https://www.youtube.com/embed/tD-6xHAHrQ4?si=ZFe41gSK8d5gqahW",
-    }
-  },
-  {
-    type: "podcast",
-    links: {
-      l1: "https://www.youtube.com/embed/RtVs87Nd1MQ?si=i4giUCtbp4Ouqv2W",
-      l2: "https://www.youtube.com/embed/DfTU5LA_kw8?si=m7fI5Ie9yIGDFCrU",
-      l3: "https://www.youtube.com/embed/Sp-1fX1Q15I?si=xyealVly9IBMW7Xi",
-      l4: "https://www.youtube.com/embed/rLYFJYfluRs?si=MjW1beQ-Q9-TAehF",
-    }
-  },
-  {
-    type: "entertainment",
-    links: {
-      l1: "https://www.youtube.com/embed/DiuuglRCchQ?si=8wTVXKbV-mbHuSjW",
-      l2: "https://www.youtube.com/embed/zmZcIX5PEyo?si=Hbrv32kl0fqcmtV9",
-      l3: "https://www.youtube.com/embed/Te-TZUjmzFQ?si=fNG16eruoFEY2KNq",
-      l4: "https://www.youtube.com/embed/si-MQ5qg3zE?si=67mfO6gV80n1ULqo",
-    }
-  }
-
-];
-
 const u2k = () => {
+  const [data, setData] = useState([]);
+  useEffect(()=>{
+    fetch(`${URLs.api.main}/4u2k-links`)
+    .then(response=>response.json())
+    .then(data=>{setData(data.data.datecreated)})
+},[])    
   return (
     <>
       <Header />
-
-
       <Main1>
         <InMainHeader reverse>
           <div>
@@ -56,7 +30,7 @@ const u2k = () => {
           </div>
           <img width="523.4" height="412" src={require('../assets/4u2k/book.png')} alt="" />
         </InMainHeader>
-        {u2kData.map((item) => (
+        {data.map((item) => (
           <ContentSection type={item.type} links={item.links}></ContentSection>
         ))}
 
