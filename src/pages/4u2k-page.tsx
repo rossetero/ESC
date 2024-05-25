@@ -14,7 +14,7 @@ const u2k = () => {
   useEffect(()=>{
     fetch(`${URLs.api.main}/4u2k-links`)
     .then(response=>response.json())
-    .then(data=>{setData(data.data.datecreated)})
+    .then(data=>{setData(data.data)})
 },[])    
   return (
     <>
