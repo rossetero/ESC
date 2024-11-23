@@ -1,7 +1,7 @@
-import { getConfigValue, getNavigationsValue } from "@ijl/cli";
+import { getConfigValue, getNavigationValue } from "@brojs/cli";
 import { generatePath } from "react-router-dom";
 
-const baseUrl = getNavigationsValue('esc.main');
+const baseUrl = getNavigationValue('esc.main');
 
 
 export const URLs = {
@@ -9,20 +9,20 @@ export const URLs = {
 
     ui:{
         games:{
-            url:`${baseUrl}${getNavigationsValue('esc.games')}`,
-            on:Boolean(getNavigationsValue('esc.games')),
+            url:`${baseUrl}${getNavigationValue('esc.games')}`,
+            on:Boolean(getNavigationValue('esc.games')),
         },
         u2k:{
-            url:`${baseUrl}${getNavigationsValue('esc.4u2k')}`,
-            on:Boolean(getNavigationsValue('esc.4u2k')),
+            url:`${baseUrl}${getNavigationValue('esc.4u2k')}`,
+            on:Boolean(getNavigationValue('esc.4u2k')),
         },
         b2b:{
-            url:`${baseUrl}${getNavigationsValue('esc.b2b')}`,
-            on:Boolean(getNavigationsValue('esc.b2b')),
+            url:`${baseUrl}${getNavigationValue('esc.b2b')}`,
+            on:Boolean(getNavigationValue('esc.b2b')),
         }, 
         prices:{
-            url:`${baseUrl}${getNavigationsValue('esc.prices')}`,
-            on:Boolean(getNavigationsValue('esc.prices')),
+            url:`${baseUrl}${getNavigationValue('esc.prices')}`,
+            on:Boolean(getNavigationValue('esc.prices')),
         },
     },
     api:{

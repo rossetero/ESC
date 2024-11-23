@@ -1,40 +1,44 @@
 {
-  "name": "esc",
-  "version": "1.0.0",
-  "description": "- Main page (by Svetlana Kostrova)",
-  "main": "./src/index.tsx",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ijl-cli server --port=8099 --with-open-browser",
-    "build": "npm run clean && ijl-cli build --dev",
-    "build:prod": "npm run clean && ijl-cli build",
-    "clean": "rimraf dist",
-    "eslint": "npx eslint src/"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
-    "@ijl/cli": "^5.1.0",
-    "@types/react": "^18.2.79",
-    "@types/react-dom": "^18.2.25",
-    "chalk": "^5.3.0",
-    "express": "^4.19.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-input-mask": "^2.0.4",
-    "react-router-dom": "^6.23.0",
-    "styled-components": "^6.1.11",
-    "typescript": "^5.4.5"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.3.0",
-    "@types/webpack-env": "^1.18.4",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.1",
-    "globals": "^15.2.0",
-    "typescript-eslint": "^7.9.0"
-  }
+    "name": "esc",
+    "version": "2.0.0",
+    "description": "- Main page (by Svetlana Kostrova)",
+    "main": "./src/index.tsx",
+    "scripts": {
+        "test": "exit 0",
+        "start": "brojs server --port=8099 --with-open-browser",
+        "build": "npm run clean && brojs build --dev",
+        "build:prod": "npm run clean && brojs build",
+        "clean": "rimraf dist",
+        "eslint": "npx eslint ./src/**/*",
+        "eslint:fix": "npx eslint ./src/**/* --fix"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@brojs/cli": "^1.6.3",
+        "@chakra-ui/react": "^3.2.0",
+        "@emotion/react": "^11.13.5",
+        "@emotion/styled": "^11.11.5",
+        "@stylistic/eslint-plugin": "^2.8.0",
+        "@types/node": "^20.17.6",
+        "@types/react": "^18.3.12",
+        "@types/react-dom": "^18.3.1",
+        "chalk": "^5.3.0",
+        "express": "^4.19.2",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-input-mask": "^2.0.4",
+        "react-router-dom": "^6.28.0",
+        "styled-components": "^6.1.11",
+        "typescript": "^5.4.5"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.11.0",
+        "@types/webpack-env": "^1.18.4",
+        "eslint": "^9.11.0",
+        "eslint-plugin-react": "^7.36.1",
+        "globals": "^15.9.0",
+        "typescript-eslint": "^8.6.0"
+    }
 }

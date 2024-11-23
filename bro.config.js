@@ -7,7 +7,7 @@ module.exports = {
       publicPath: `/static/${pkg.name}/${process.env.VERSION || pkg.version}/`
     }
   },
-  /* use https://kc.admin.inno-js.ru/ to create config, navigations and features */
+  /* use https://admin.bro-js.ru/ to create config, navigations and features */
   navigations: {
     'esc.main': '/esc',
     'esc.games': '/games',
