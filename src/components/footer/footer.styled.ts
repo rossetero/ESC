@@ -1,10 +1,8 @@
 import styled from "@emotion/styled"
 
-interface StyledFooterProps {
-    noMargin?: boolean;
-}
 
-export const StyledFooter = styled.footer<StyledFooterProps>`
+
+export const StyledFooter = styled.footer`
     padding: 0% 10%;
     height: 204px;
     background-color: #D9D9D9;
@@ -12,7 +10,7 @@ export const StyledFooter = styled.footer<StyledFooterProps>`
     align-items: center;
     justify-content: space-between;
     font-size: 1vw;
-    margin-top: ${props => (props.noMargin ? '0%' : '5%')};
+    margin-top: 5%;
     .contact{
         display:block;
     }

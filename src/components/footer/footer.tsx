@@ -3,15 +3,17 @@ import { NavPanel } from "../nav-panel";
 import { Caption } from "../caption";
 import { StyledFooter } from "./footer.styled";
 
-export const Footer = (props) => {
+export const Footer = () => {
     return (
-        <StyledFooter noMargin={props.noMargin}>
+        <StyledFooter>
 
             <div>
+
                 <Caption hide footer><h1><span>e</span>sc</h1></Caption>
 
                 <p className="copyright">©ESC 2024 <br /> All rights reserved</p>
             </div>
+
 
             <NavPanel></NavPanel>
 
@@ -21,6 +23,7 @@ export const Footer = (props) => {
             </div>
 
             <div>
+
                 <ul className="contact">
                     <li>Нет вопросов? Запишись.</li>
                     <li>Есть вопросы? Позвони.</li>
@@ -28,7 +31,9 @@ export const Footer = (props) => {
                         910
                     </li>
                 </ul>
+
             </div>
+
 
         </StyledFooter>
     )

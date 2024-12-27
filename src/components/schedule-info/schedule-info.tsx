@@ -1,22 +1,14 @@
 import React from "react";
-import { 
-    StyledDiv, 
-    StyledH2, 
-    StyledP, 
-    StyledInfoDiv, 
-    StyledInfo, 
-    StyledRed
-} from "./schedule-info.styled";
 
 export const ScheduleInfo = () => {
     return (
-        <StyledDiv>
-            <StyledH2><StyledRed>NEXT</StyledRed> MEETING</StyledH2>
-            <StyledP>ул. Спартаковская, д. 2</StyledP>
-            <StyledInfoDiv>
-                <StyledInfo>23.03</StyledInfo>
-                <StyledInfo>12:10</StyledInfo>
-            </StyledInfoDiv>
-        </StyledDiv>
+        <div className="schedule_div">
+            <h2 className="schedule_header"><span className="red">NEXT</span> MEETING</h2>
+            <p className="schedule_info">ул. Спартаковская, д. 2</p>
+            <div className="schedule_div_gap">
+                <span className="schedule_info">23.03</span>
+                <span className="schedule_info">12:10</span>
+            </div>
+        </div>
     )
 }
