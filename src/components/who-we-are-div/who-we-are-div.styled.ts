@@ -22,6 +22,10 @@ export const StyledH2 = styled.h2`
     width: 0px;
     display: flex;
     justify-content: flex-end;
+
+    @media (max-width: 768px) {
+        
+    }
 `;
 
 export const StyledP = styled.p`
@@ -31,6 +35,11 @@ export const StyledP = styled.p`
     max-width: 590px;
     padding-top: 3%;
     padding-left: 30px;
+
+    @media (max-width: 768px) {
+        font-size: 3vw;
+        line-height: 1.2;
+    }
 `;
 
 export const StyledRed = styled.span`

@@ -6,6 +6,10 @@ export const StyledDiv = styled.div`
     flex-direction: column;
     gap: 20px;
     padding-bottom: 130px;
+
+    @media (max-width: 768px) {
+        padding-bottom: 30px;
+    }
 `;
 
 export const StyledH2 = styled.h2`
