@@ -23,17 +23,31 @@ export const StyledTitle = styled.h2`
     letter-spacing: 0.05em;
     color: var(--text-red);
     margin-bottom: 35px;
+
+    @media (max-width: 768px) {
+        font-size: 4vw;
+    }
 `;
 
 export const StyledDescription = styled.p`
     margin-bottom: 35px;
+    font-size: 1.5vw;
+
+    @media (max-width: 768px) {
+        font-size: 3vw;
+        line-height: 1.2;
+    }
 `;
 
 export const StyledPriceTag = styled.p`
     font-weight: 500;
-    font-size: 32px;
+    font-size: 1.5vw;
     letter-spacing: 0.05em;
     color: #000;
+
+    @media (max-width: 768px) {
+        font-size: 3vw;
+    }
 `;
 
 export const ModalOverlay = styled.div`
