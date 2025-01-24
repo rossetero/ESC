@@ -119,7 +119,7 @@ export const ClientContactForm: React.FC<ClientContactFormProps> = ({ isOpen, on
             setName("");
             setTelegram("");
             setPhone("");
-            setSelectedOption("1");
+            setSelectedOption("500 - один раз");
             setErrorMessage("Данные успешно отправлены!");
         } catch (error) {
             console.error("Ошибка отправки данных:", error);
@@ -180,10 +180,10 @@ export const ClientContactForm: React.FC<ClientContactFormProps> = ({ isOpen, on
                     value={selectedOption}
                     onChange={(e) => setSelectedOption(e.target.value)}
                 >
-                    <option value="1">500₽ - один раз</option>
-                    <option value="2">900₽ - проходка на двоих</option>
-                    <option value="3">2200₽ - абонемент на 5 встреч</option>
-                    <option value="4">5000₽ - личный спикинг клаб</option>
+                    <option value="500 - один раз">500₽ - один раз</option>
+                    <option value="900 - проходка на двоих">900₽ - проходка на двоих</option>
+                    <option value="2200 - абонемент на 5 встреч">2200₽ - абонемент на 5 встреч</option>
+                    <option value="5000 - личный спикинг клаб">5000₽ - личный спикинг клаб</option>
                 </select>
             </div>
             {errorMessage && <div className="error-message">{errorMessage}</div>}
