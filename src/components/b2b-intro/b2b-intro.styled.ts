@@ -3,6 +3,10 @@ import styled from "@emotion/styled"
 export const StyledIntro = styled.section`
     position: relative;
     margin-top: 60px;
+
+    @media (max-width: 768px) {
+        margin-top: 30px;
+    }
 `;
 
 export const StyledIntroImgLeft = styled.img`
@@ -10,6 +14,10 @@ export const StyledIntroImgLeft = styled.img`
     width: 30vw;
     left: -96px;
     z-index: -1;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 `;
 
 export const StyledIntroImgRight = styled.img`
@@ -17,6 +25,10 @@ export const StyledIntroImgRight = styled.img`
     width: 30vw;
     right: -96px;
     z-index: -1;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 `;
 
 export const StyledIntroDiv = styled.div`
@@ -38,6 +50,11 @@ export const StyledIntroP = styled.p`
     letter-spacing: 0.05em;
     margin-top: 30px;
     text-align: center;
+
+    @media (max-width: 768px) {
+        font-size: 3vw;
+        line-height: 1.2;
+    }
 `;
 
 export const StyledRed = styled.span`

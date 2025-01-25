@@ -1,6 +1,7 @@
 import { PriceCard } from "../price-card";
 import React from "react";
 import { StyledPriceBlock } from "./price-block.styled";
+import { StyledP } from "./price-block.styled";
 const priceData = [
   {
 

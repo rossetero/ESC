@@ -28,6 +28,11 @@ export const StyledPanel = styled.nav`
                 justify-content: space-around;
                 list-style-type: none;
                 width: 50vw;
+
+                @media (max-width: 768px) {
+                    font-size: 3vw;
+                    line-height: 1.2;
+                }
             `
         }
     }} 
