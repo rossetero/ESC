@@ -112,7 +112,6 @@ export const ClientContactForm: React.FC<ClientContactFormProps> = ({ isOpen, on
             }
 
             const result = await response.json();
-            console.log("Ответ сервера:", result);
 
             setSubmittedData(newData);
             // Очистка формы и сообщение об успешной отправке
@@ -122,7 +121,6 @@ export const ClientContactForm: React.FC<ClientContactFormProps> = ({ isOpen, on
             setSelectedOption("500 - один раз");
             setErrorMessage("Данные успешно отправлены!");
         } catch (error) {
-            console.error("Ошибка отправки данных:", error);
             setErrorMessage("Не удалось отправить данные. Попробуйте ещё раз.");
         } finally {
             setIsSubmitting(false);
