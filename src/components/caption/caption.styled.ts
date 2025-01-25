@@ -25,6 +25,10 @@ export const StyledCaption = styled.div`
             padding-top: 30px;
             padding-bottom: 30px;
         }
+
+        h2 {
+            font-size: 4vw;
+        }
     }
 
     ${(props: any) => {

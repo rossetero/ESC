@@ -19,7 +19,7 @@ export const StyledPriceCard = styled.div`
 
 export const StyledTitle = styled.h2`
     font-weight: 900;
-    font-size: 48px;
+    font-size: 3vw;
     letter-spacing: 0.05em;
     color: var(--text-red);
     margin-bottom: 35px;
@@ -41,7 +41,7 @@ export const StyledDescription = styled.p`
 
 export const StyledPriceTag = styled.p`
     font-weight: 500;
-    font-size: 1.5vw;
+    font-size: 2vw;
     letter-spacing: 0.05em;
     color: #000;
 
