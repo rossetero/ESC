@@ -14,8 +14,8 @@ export const ScheduleInfo = () => {
             <StyledH2><StyledRed>NEXT</StyledRed> MEETING</StyledH2>
             <StyledP>ул. Спартаковская, д. 2</StyledP>
             <StyledInfoDiv>
-                <StyledInfo>23.03</StyledInfo>
-                <StyledInfo>12:10</StyledInfo>
+                <StyledInfo>24.01</StyledInfo>
+                <StyledInfo>14:30</StyledInfo>
             </StyledInfoDiv>
         </StyledDiv>
     )

@@ -34,12 +34,10 @@ export const StyledCaption = styled.div`
     ${(props: any) => {
         if (props.hide) {
             return css`
-    @media (max-width: 600px) {
-        {
-            display: none;
-        }
-    }
-`
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            `;
         }
     }}
 `;
