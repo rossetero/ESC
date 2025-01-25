@@ -50,3 +50,19 @@ export const StyledImage = styled.img`
     width: 20px; /* Устанавливаем ширину изображения равной ширине буквы */
     height: 20px; /* Устанавливаем высоту изображения равной высоте буквы */
 `;
+
+export const StyledLink = styled.a`
+    text-decoration: none;
+    color:#C00000;
+`
+
+//   :root {
+//       --text-red: #C00000;
+//       --secondary-color: #D9D9D9;
+//       --default-font-size: 1.5vw;
+//   }
+
+//   a {
+//       text-decoration: none;
+//       color: #000000;
+//   }

@@ -1,5 +1,5 @@
 import React from "react";
-import { GlobalStyle, MainWrapper, GamesHeader } from "../components/gamestyle"; /*перенесенные стили .css*/
+import {  MainWrapper, GamesHeader } from "../components/gamestyle"; /*перенесенные стили .css*/
 import { Caption } from "../components/caption";
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
@@ -8,7 +8,7 @@ import { GamesBlock } from "../components/games-block";
 const GamesPage = () => {
     return (
         <>
-            <GlobalStyle />
+            {/* <Global styles={GlobalStyle} /> */}
             <Header />
             <MainWrapper>
                 <GamesHeader>

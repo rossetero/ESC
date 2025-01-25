@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { URLs } from "../../__data__/urls";
-import { StyledGamesBlock, StyledGame, StyledOneTimeGame, StyledGameHeader, StyledLogo, StyledFlexItem, StyledDescription } from "./games-block.styled";
+import {StyledLink, StyledGamesBlock, StyledGame, StyledOneTimeGame, StyledGameHeader, StyledLogo, StyledFlexItem, StyledDescription } from "./games-block.styled";
 
 interface Game {
   title: string;
@@ -23,8 +23,9 @@ export const GamesBlock = () => {
           <StyledOneTimeGame>
             <StyledGameHeader>
               <StyledLogo>
-                <a href={game.link} className="red_letter">{game.title}</a>
-                {/* <StyledImage src={game.image} /> Используем стилизованное изображение */}
+                <StyledLink href={game.link}>
+                  {game.title}
+                  </StyledLink> 
               </StyledLogo>
             </StyledGameHeader>
             <StyledFlexItem>
