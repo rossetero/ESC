@@ -25,5 +25,28 @@
 
     "footer.button": "RUS",
     "footer.noquestions":"Got no questions? Sign up.",
-    "footer.gotquestions":"Got questions? Call us."
+    "footer.gotquestions":"Got questions? Call us.",
+
+    "price.data": [
+        {
+            "title": "one time speaking club",
+            "description": "I only want to ask! Oh, try it. In general, I'm only on one time. But I promise to come back!",
+            "price": 500
+        },
+        {
+            "title": "for myself and for sasha",
+            "description": "We are two and we want to talk. On English, a lot and fun. I pay for myself and that guy (he's with me just).",
+            "price": 900
+        },
+        {
+            "title": "all for me and five",
+            "description": "A package of meetings with a 12% discount for true club fans. Congratulations, you are now a regular speaker of the club.",
+            "price": 2200
+        },
+        {
+            "title": "girl, english for us",
+            "description": "Private speaking club only for your company? No problem! We will choose the date and time and the topic of the meeting.",
+            "price": 5000
+        }
+    ]
 }
