@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation, Trans } from "react-i18next";
 import { 
     StyledIntro,
     StyledIntroH1,
@@ -9,11 +10,12 @@ import {
 } from "./main-intro.styled";
 
 export const MainIntro = () => {
+    const { t } = useTranslation();
+
     return (
         <StyledIntro>
             <StyledIntroH1><StyledRed>ENGLISH<br /></StyledRed>SPEAKING<br />CLUB</StyledIntroH1>
-            <StyledIntroP>Место, где молодёжь собирается для общения на английском, веселых встреч и новых
-            друзей.<br /><br />Лучший способ практики языка!<br />(с) основатель стартапа</StyledIntroP>
+            <StyledIntroP><Trans>{t('main.intro')}</Trans></StyledIntroP>
             <StyledIntroDiv>
                 <StyledIntroImg src={require('../../assets/main_page/koza.jpg')} alt="рисунок для главной страницы" />
             </StyledIntroDiv>

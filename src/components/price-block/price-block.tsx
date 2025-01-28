@@ -1,5 +1,6 @@
-import { PriceCard } from "../price-card";
 import React from "react";
+import { useTranslation } from "react-i18next";
+import { PriceCard } from "../price-card";
 import { StyledPriceBlock } from "./price-block.styled";
 import { StyledP } from "./price-block.styled";
 const priceData = [
@@ -33,6 +34,8 @@ const priceData = [
 ];
 
 export const PriceBlock = () => {
+  const { t } = useTranslation();
+
   return (
     <StyledPriceBlock>
 

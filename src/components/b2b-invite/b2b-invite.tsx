@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation, Trans } from "react-i18next";
 import {
     StyledSection, 
     StyledDiv, 
@@ -10,16 +11,15 @@ import {
 import { InviteButton } from "../invite-button";
 
 export const B2BInvite = () => {
+    const { t } = useTranslation();
+
     return (
         <StyledSection>
             <StyledDiv>
-                <StyledP>Мы с радостью обсудим все детали сотрудничества и предложим вам индивидуальные
-                условия, которые будут выгодны всем сторонам.<br /><br />Не упустите шанс привлечь новую аудиторию и
-                поддержать наш образовательный проект!
-                </StyledP>
+                <StyledP><Trans>{t('b2b.invite.text1')}</Trans></StyledP>
                 <div>
-                    <InviteButton>Пригласить</InviteButton>
-                    <StyledDivP>Заинтересовало предложение? Оставляйте заявку и мы с вами свяжемся!</StyledDivP>
+                    <InviteButton><Trans>{t('b2b.invite.button')}</Trans></InviteButton>
+                    <StyledDivP><Trans>{t('b2b.invite.text2')}</Trans></StyledDivP>
                 </div>
             </StyledDiv>
             <StyledH2>COME <StyledRed>WITH</StyledRed> US</StyledH2>

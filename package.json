@@ -12,7 +12,7 @@
         "eslint": "npx eslint ./src/**/*",
         "eslint:fix": "npx eslint ./src/**/* --fix"
     },
-   "proxy": "https://escbackend.onrender.com",
+    "proxy": "https://escbackend.onrender.com",
     "keywords": [],
     "author": "",
     "license": "ISC",
@@ -29,10 +29,10 @@
         "express": "^4.19.2",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
+        "react-i18next": "^15.4.0",
         "react-input-mask": "^2.0.4",
         "react-redux": "^9.2.0",
         "react-router-dom": "^6.28.0",
-        
         "typescript": "^5.4.5",
         "webpack-hot-middleware": "^2.26.1"
     },

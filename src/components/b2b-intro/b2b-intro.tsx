@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation, Trans } from "react-i18next";
 import { 
     StyledIntro,
     StyledIntroImgLeft,
@@ -11,6 +12,8 @@ import {
 
 
 export const B2BIntro = () => {
+    const { t } = useTranslation();
+
     return (
         <StyledIntro>
           <div>
@@ -22,7 +25,7 @@ export const B2BIntro = () => {
 
           <StyledIntroDiv>
             <StyledIntroH2><StyledRed>B2B</StyledRed> PAGE</StyledIntroH2>
-            <StyledIntroP>Станьте партнёром English Speaking Club<br />и привлекайте новых клиентов!</StyledIntroP>
+            <StyledIntroP><Trans>{t('b2b.intro')}</Trans></StyledIntroP>
           </StyledIntroDiv>
         </StyledIntro>
     )

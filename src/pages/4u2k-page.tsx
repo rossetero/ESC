@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { useTranslation, Trans } from "react-i18next";
 import { URLs } from "../__data__/urls";
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
@@ -17,6 +17,9 @@ const u2k = () => {
     .then(response=>response.json())
     .then(data=>{setData(data.data)})
 },[])    
+
+  const { t } = useTranslation();
+
   return (
     <>
       <Header />
@@ -24,10 +27,7 @@ const u2k = () => {
         <InMainHeader reverse>
           <div>
             <Caption><h1><span>4U2K</span> PAGE</h1></Caption>
-            <StyledP>4u2k - частое сокращение из американской переписки,<br /> оно означает “for you to know” - так,
-              чтобы ты знал. <br /> <br /> А чтобы получить ещё полезного - смотри видео, <br /> слушай
-              подкасты и,
-              конечно, приходи на встречи нашего клуба!</StyledP>
+            <StyledP><Trans>{t('4u2k')}</Trans></StyledP>
           </div>
           <img width="523.4" height="412" src={require('../assets/4u2k/book.png')} alt="" />
         </InMainHeader>
