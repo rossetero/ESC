@@ -13,7 +13,7 @@ export const GamesHeader = () => {
     
     return (
         <StyledDiv>
-            <StyledImg src={require("../../assets/prices/handmoney.png")} alt="" />
+            <StyledImg src={require("../../assets/games/games1.png")} alt="" />
             <StyledDivDiv>
                 <Caption><h1>GAMES <span>4U</span></h1></Caption>
                 <StyledP><Trans>{t('games')}</Trans></StyledP>

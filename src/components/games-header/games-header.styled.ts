@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const StyledImg = styled.img`
-    height: 30vw;
+    height: 35vw;
 
     @media (max-width: 768px) {
             display: none;
@@ -31,5 +31,7 @@ export const StyledDiv = styled.div`
 `;
 
 export const StyledDivDiv = styled.div`
-    
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 `;
