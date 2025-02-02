@@ -4,13 +4,20 @@ import { Caption } from "../components/caption";
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
 import { GamesBlock } from "../components/games-block";
+import { Main1 } from "../components/common";
 
 const GamesPage = () => {
     return (
         <>
-            {/* <Global styles={GlobalStyle} /> */}
             <Header />
-            <MainWrapper>
+
+            <Main1>
+                <GamesBlock />
+            </Main1>
+
+            
+
+            {/* <MainWrapper>
                 <GamesHeader>
                     <div>
                         <Caption>
@@ -20,7 +27,7 @@ const GamesPage = () => {
                     <img width="400" height="412" src={require("../../src/assets/games/games1.png")} alt="" />
                 </GamesHeader>
                 <GamesBlock /> 
-            </MainWrapper>
+            </MainWrapper> */}
             <Footer />
         </>
     );

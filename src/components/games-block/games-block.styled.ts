@@ -6,6 +6,11 @@ export const StyledGamesBlock = styled.section`
     grid-template-rows: repeat(2, 1fr);
     margin-top: 3%;
     margin-bottom: 3%;
+    
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 `;
 
 export const StyledGame = styled.div`
