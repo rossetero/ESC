@@ -1,0 +1,1 @@
+export { GamesHeader } from './games-header'
