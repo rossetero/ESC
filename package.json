@@ -17,7 +17,6 @@
     "license": "ISC",
     "dependencies": {
         "@brojs/cli": "^1.6.3",
-        "@chakra-ui/react": "^3.2.0",
         "@emotion/react": "^11.13.5",
         "@emotion/styled": "^11.11.5",
         "@reduxjs/toolkit": "^2.5.0",

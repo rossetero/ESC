@@ -22,7 +22,7 @@ module.exports = {
     },
   },
   config: {
-    "esc.api": "/ms/esc",
+    "esc.api": "/api",
     "esc.backend": "https://escbackend.onrender.com/api",
     "esc.lang_switch_btn": "1",
     "esc.invite": "1",
