@@ -5,6 +5,7 @@ import { Main1 } from '../components/common';
 import { MainIntro } from '../components/main-intro';
 import { MainSchedule } from '../components/main-schedule';
 import { MainWhoWeAre } from '../components/main-who-we-are';
+import { getConfigValue } from '@brojs/cli';
 
 const main_page = () => {
   return (
@@ -15,7 +16,7 @@ const main_page = () => {
 
         <MainIntro />
 
-        <MainSchedule />
+        {getConfigValue('esc.invite') && <MainSchedule />}
 
         <MainWhoWeAre />
 

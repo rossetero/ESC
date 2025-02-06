@@ -16,11 +16,16 @@ module.exports = {
     'esc.b2b':'/b2b',
   },
   features: {
+    
     'esc': {
       // add your features here in the format [featureName]: { value: string }
     },
   },
   config: {
-    'esc.api': '/api'
+    "esc.api": "/ms/esc",
+    "esc.backend": "https://escbackend.onrender.com/api",
+    "esc.lang_switch_btn": "1",
+    "esc.invite": "1",
+    "esc.contact": "1"
   }
 }

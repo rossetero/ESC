@@ -9,6 +9,7 @@ import {
     StyledRed
 } from "./b2b-invite.styled";
 import { InviteButton } from "../invite-button";
+import { getConfigValue } from "@brojs/cli";
 
 export const B2BInvite = () => {
     const { t } = useTranslation();
@@ -17,10 +18,10 @@ export const B2BInvite = () => {
         <StyledSection>
             <StyledDiv>
                 <StyledP><Trans>{t('b2b.invite.text1')}</Trans></StyledP>
-                <div>
+               { getConfigValue('esc.invite') && <div>
                     <InviteButton><Trans>{t('b2b.invite.button')}</Trans></InviteButton>
                     <StyledDivP><Trans>{t('b2b.invite.text2')}</Trans></StyledDivP>
-                </div>
+                </div>}
             </StyledDiv>
             <StyledH2>COME <StyledRed>WITH</StyledRed> US</StyledH2>
         </StyledSection>

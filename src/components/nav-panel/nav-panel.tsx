@@ -15,13 +15,6 @@ export const NavPanel = (props) => {
   return (
     <nav>
       <StyledPanel header={props.header}>
-
-        {/* {navList.map((element) => (
-          <li key={element.href}>
-            <Link href={element.href}>{element.title}</Link>
-          </li>
-        ))} */}
-
         {navList.map((element) => {
           return element.href ? (
             <li key={element.href}>
