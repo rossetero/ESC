@@ -14,7 +14,7 @@ export const ClientContactForm: React.FC<ClientContactFormProps> = ({ isOpen, on
   const [name, setName] = useState("")
   const [telegram, setTelegram] = useState("")
   const [phone, setPhone] = useState("")
-  const [selectedOption, setSelectedOption] = useState("1")
+  const [selectedOption, setSelectedOption] = useState("500 - один раз")
   const [errorMessage, setErrorMessage] = useState("")
 
   const [addRecord, { isLoading }] = useAddRecordMutation() // Используем RTK Query

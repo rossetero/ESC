@@ -26,7 +26,7 @@ module.exports = {
   },
   config: {
     "esc.api": "/api",
-    "esc.backend": "https://escbackend.onrender.com/api",
+    "esc.backend": "https://escbackend.onrender.com/api/v1/",
 
   }
 }
