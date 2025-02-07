@@ -5,8 +5,8 @@ import InputMask from "react-input-mask";
 import { useAddRecordMutation } from "../../api"; // Импортируем RTK Query
 
 interface ClientContactFormProps {
-    isOpen: boolean;
-    onClose: () => void;
+  isOpen: boolean;
+  onClose: () => void;
 }
 
 interface FormData {

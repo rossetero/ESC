@@ -11,4 +11,4 @@ export const StyledHeader = styled.header`
     align-items: center;
     font-size: 2vw;
     height: 8vw;
-`;
+`

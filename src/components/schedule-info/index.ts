@@ -1,1 +1,1 @@
-export { ScheduleInfo } from './schedule-info';
+export { ScheduleInfo } from './schedule-info'

@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "@emotion/styled"
 
 export const StyledPriceCard = styled.div`
     margin: 3% 3%;
@@ -15,26 +15,40 @@ export const StyledPriceCard = styled.div`
     &:hover {
         background-color: white;
     }
-`;
+`
 
 export const StyledTitle = styled.h2`
     font-weight: 900;
-    font-size: 48px;
+    font-size: 3vw;
     letter-spacing: 0.05em;
     color: var(--text-red);
     margin-bottom: 35px;
-`;
+
+    @media (max-width: 768px) {
+        font-size: 4vw;
+    }
+`
 
 export const StyledDescription = styled.p`
     margin-bottom: 35px;
-`;
+    font-size: 1.5vw;
+
+    @media (max-width: 768px) {
+        font-size: 3vw;
+        line-height: 1.2;
+    }
+`
 
 export const StyledPriceTag = styled.p`
     font-weight: 500;
-    font-size: 32px;
+    font-size: 2vw;
     letter-spacing: 0.05em;
     color: #000;
-`;
+
+    @media (max-width: 768px) {
+        font-size: 3vw;
+    }
+`
 
 export const ModalOverlay = styled.div`
     position: fixed;
@@ -47,13 +61,13 @@ export const ModalOverlay = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-`;
+`
 
 export const ModalContent = styled.div`
     background-color: white; // Цвет фона модального окна
     padding: 20px;
     border-radius: 10px;
     z-index: 1001; // Помещаем поверх затемнения фона
-`;
+`
 
 

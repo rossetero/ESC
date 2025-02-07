@@ -1,1 +1,1 @@
-export { B2BInvite } from './b2b-invite';
+export { B2BInvite } from './b2b-invite'

@@ -1,1 +1,1 @@
-export { MainIntro } from './main-intro';
+export { MainIntro } from './main-intro'

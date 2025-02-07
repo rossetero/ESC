@@ -6,7 +6,7 @@ export const StyledGlobalDiv = styled.div`
     justify-content: space-evenly;
     padding-left: 10%;
     gap: 20px;
-`;
+`
 
 export const StyledDiv = styled.div`
     display: flex;
@@ -14,7 +14,7 @@ export const StyledDiv = styled.div`
     align-items: stretch;
     align-content: center;
     justify-content: center;
-`;
+`
 
 export const StyledH2 = styled.h2`
     font-size: 7vw;
@@ -22,7 +22,11 @@ export const StyledH2 = styled.h2`
     width: 0px;
     display: flex;
     justify-content: flex-end;
-`;
+
+    @media (max-width: 768px) {
+        
+    }
+`
 
 export const StyledP = styled.p`
     font-size: 1.5vw;
@@ -31,15 +35,20 @@ export const StyledP = styled.p`
     max-width: 590px;
     padding-top: 3%;
     padding-left: 30px;
-`;
+
+    @media (max-width: 768px) {
+        font-size: 3vw;
+        line-height: 1.2;
+    }
+`
 
 export const StyledRed = styled.span`
     color: #C00000;
-`;
+`
 
 export const StyledLosung = styled.h2`
     font-size: 5vw;
     font-weight: 900;
     letter-spacing: 0.05em;
     padding-left: 30px;
-`;
+`

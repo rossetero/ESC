@@ -1,36 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './app'
+import i18next from 'i18next'
+import { i18nextReactInitConfig } from './i18next'
 import { Provider } from 'react-redux';
-import { store } from './store';
-import App from './app';
-
+import { store } from './store'; 
 export default () => (
   <Provider store={store}>
     <App />
   </Provider>
 );
+  
+let rootElement: ReactDOM.Root
 
-let rootElement: ReactDOM.Root;
+i18next.t = i18next.t.bind(i18next)
+const i18nextPromise = i18nextReactInitConfig(i18next)
+  
+export const mount = async (Сomponent, element = document.getElementById('app')) => {
+  const rootElement = ReactDOM.createRoot(element)
+  await i18nextPromise
 
-export const mount = (Component, element = document.getElementById('app')) => {
-  const rootElement = ReactDOM.createRoot(element);
-  rootElement.render(
-    <Provider store={store}>
-      <Component />
-    </Provider>
-  );
+  rootElement.render(<Сomponent/>)
 
-  if (module.hot) {
-    module.hot.accept('./app', () => {
-      rootElement.render(
-        <Provider store={store}>
-          <Component />
-        </Provider>
-      );
-    });
+  
+
+  if(module.hot) {
+    await i18next.reloadResources()
+
+    module.hot.accept('./app', ()=> {
+      rootElement.render(<Сomponent/>)
+    })
   }
-};
+}
 
 export const unmount = () => {
-  rootElement.unmount();
-};
+  rootElement.unmount()
+}

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from '@emotion/styled'
 
 export const StyledInviteButton = styled.button`
   font-size: 3vw; 
@@ -23,7 +23,7 @@ export const StyledInviteButton = styled.button`
   &:focus {
     border: none;
   }
-`;
+`
 
 export const ModalOverlay = styled.div`
   position: fixed;
@@ -36,4 +36,4 @@ export const ModalOverlay = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 1000;
-`;
+`

@@ -33,9 +33,9 @@ export const PriceCard = ({ title, description, price }) => {
     );
 }; */
 
-import React, { useState } from 'react';
-import { StyledPriceCard, StyledTitle, StyledDescription, StyledPriceTag, ModalOverlay } from './price-card.styled';
-import { ClientContactForm } from '../client-contact-form';
+import React, { useState } from 'react'
+import { StyledPriceCard, StyledTitle, StyledDescription, StyledPriceTag, ModalOverlay } from './price-card.styled'
+import { ClientContactForm } from '../client-contact-form'
 
 interface PriceCardProps {
   title: string;
@@ -44,10 +44,10 @@ interface PriceCardProps {
 }
 
 export const PriceCard: React.FC<PriceCardProps> = ({ title, description, price }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
-  const openModal = () => setIsOpen(true);
-  const closeModal = () => setIsOpen(false);
+  const openModal = () => setIsOpen(true)
+  const closeModal = () => setIsOpen(false)
 
   return (
     <>
@@ -62,5 +62,5 @@ export const PriceCard: React.FC<PriceCardProps> = ({ title, description, price 
         </ModalOverlay>
       )}
     </>
-  );
-};
+  )
+}

@@ -1,1 +1,1 @@
-export { MainSchedule } from './main-schedule';
+export { MainSchedule } from './main-schedule'

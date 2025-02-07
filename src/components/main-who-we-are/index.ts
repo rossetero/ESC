@@ -1,1 +1,1 @@
-export { MainWhoWeAre } from './main-who-we-are';
+export { MainWhoWeAre } from './main-who-we-are'

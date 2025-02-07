@@ -1,1 +1,1 @@
-export { InviteButton } from './invite-button';
+export { InviteButton } from './invite-button'

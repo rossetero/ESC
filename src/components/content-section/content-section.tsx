@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 import { StyledContentSection } from './content-section.styled'
-import { Caption } from "../caption";
+import { Caption } from "../caption"
 
 
 export const ContentSection = (props) => {
@@ -15,6 +15,6 @@ export const ContentSection = (props) => {
       </div>
 
     </StyledContentSection>
-  );
+  )
 
-};
+}
