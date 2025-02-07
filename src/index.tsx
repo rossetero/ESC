@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client'
 import App from './app'
 import i18next from 'i18next'
 import { i18nextReactInitConfig } from './i18next'
-import { Provider } from 'react-redux';
-import { store } from './store'; 
+import { Provider } from 'react-redux'
+import { store } from './store'
 export default () => (
   <Provider store={store}>
     <App />
   </Provider>
-);
+)
   
 let rootElement: ReactDOM.Root
 
