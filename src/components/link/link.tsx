@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 import { StyledLink } from './link.styled'
 import { Link as ConnectedLink } from 'react-router-dom'
@@ -12,5 +12,5 @@ export const Link = (props) => {
 
       </ConnectedLink>
     </StyledLink>
-  );
-};
+  )
+}

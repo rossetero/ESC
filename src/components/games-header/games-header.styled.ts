@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "@emotion/styled"
 
 export const StyledImg = styled.img`
     height: 35vw;
@@ -6,7 +6,7 @@ export const StyledImg = styled.img`
     @media (max-width: 768px) {
             display: none;
     }
-`;
+`
 
 export const StyledP = styled.p`
     font-size: 1.5vw;
@@ -16,7 +16,7 @@ export const StyledP = styled.p`
         font-size: 3vw;
         line-height: 1.2;
     }
-`;
+`
 
 export const StyledDiv = styled.div`
     display: flex; 
@@ -28,10 +28,10 @@ export const StyledDiv = styled.div`
     @media (max-width: 768px) {
         padding: 0px 46px 0px 46px;
     }
-`;
+`
 
 export const StyledDivDiv = styled.div`
     display: flex;
     flex-direction: column;
     gap: 30px;
-`;
+`

@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 // import '../styles/style.css'
 // import '../styles/main-page-styles.css'
-import { Caption } from '../components/caption';
+import { Caption } from '../components/caption'
 
 const not_found = () => {
   return (
@@ -17,7 +17,7 @@ const not_found = () => {
 
 
     </>
-  );
-};
+  )
+}
 
-export default not_found;
+export default not_found

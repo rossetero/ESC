@@ -3,8 +3,8 @@ import { css } from '@emotion/react'
 
 export const StyledPanel = styled.nav`
     ${(props: any) => {
-        if (!props.header) {
-            return css`
+      if (!props.header) {
+        return css`
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -19,9 +19,9 @@ export const StyledPanel = styled.nav`
                     gap: 15px;
                 }
             `
-        }
-        else {
-            return css`
+      }
+      else {
+        return css`
                 display: flex;
                 flex-wrap: nowrap;
                 flex-direction: row;
@@ -34,6 +34,6 @@ export const StyledPanel = styled.nav`
                     line-height: 1.2;
                 }
             `
-        }
+      }
     }} 
-`;
+`

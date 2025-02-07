@@ -1,1 +1,1 @@
-export { GamesBlock } from "../games-block/games-block";
+export { GamesBlock } from "../games-block/games-block"

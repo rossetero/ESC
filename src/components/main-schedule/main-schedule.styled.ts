@@ -8,7 +8,7 @@ export const StyledSchedule = styled.section`
     @media (max-width: 768px) {
         padding-left: 0vw;
     }
-`;
+`
 
 export const StyledImg = styled.img`
     height: 40vw;
@@ -20,7 +20,7 @@ export const StyledImg = styled.img`
     @media (max-width: 768px) {
         display: none;
     }
-`;
+`
 
 export const StyledDiv = styled.div`
     margin-top: 10vw;
@@ -33,7 +33,7 @@ export const StyledDiv = styled.div`
         align-items: center;
         margin-top: 1vw;
     }
-`;
+`
 
 export const StyledP = styled.p`
     width: 50vw;
@@ -48,4 +48,4 @@ export const StyledP = styled.p`
         text-align: left;
         line-height: 1.2;
     }
-`;
+`

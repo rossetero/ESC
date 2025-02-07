@@ -37,7 +37,7 @@ export const i18nextAxios = axios.create()
 const request = async (opt, url, payload, callback) => {
   let overrides = {}
 
-  const [_, lng] = /([a-z\-]{2,5}).json$/.exec(url)
+  const [_, lng] = /([a-z]{2,5}).json$/.exec(url)
 
   try {
     const resp = await fetch(

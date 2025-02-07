@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "@emotion/styled"
 
 
 export const Main1 = styled.main`
@@ -8,4 +8,4 @@ overflow: hidden;
 @media (max-width: 768px) {
     padding: 0px 46px 0px 46px;
 }
-`;
+`

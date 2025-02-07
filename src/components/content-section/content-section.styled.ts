@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "@emotion/styled"
 
 export const StyledContentSection = styled.section`
  margin: 8% 0%;
@@ -11,4 +11,4 @@ div {
     flex-direction: row;
     justify-content: space-between;
 }
-`;
+`

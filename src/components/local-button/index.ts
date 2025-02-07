@@ -1,1 +1,1 @@
-export { LocalButton } from './local-button';
+export { LocalButton } from './local-button'

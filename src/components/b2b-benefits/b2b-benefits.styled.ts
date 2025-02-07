@@ -1,19 +1,19 @@
 import styled from "@emotion/styled"
 
 interface StyledPunktProps {
-    center?: boolean;
-    right?: boolean;
+  center?: boolean;
+  right?: boolean;
 }
 
 interface StyledImgProps {
-    up?: boolean;
-    down?: boolean;
+  up?: boolean;
+  down?: boolean;
 }
 
 export const StyledSection = styled.section`
     position: relative;
     margin-top: 8vw;
-`;
+`
 
 export const StyledText = styled.p`
     font-size: 1.5vw;
@@ -25,7 +25,7 @@ export const StyledText = styled.p`
         line-height: 1.2;
         padding-bottom: 30px;
     }
-`;
+`
 
 export const StyledPunkt = styled.p<StyledPunktProps>`
     font-size: 1.5vw;
@@ -39,11 +39,11 @@ export const StyledPunkt = styled.p<StyledPunktProps>`
         font-size: 3vw;
         line-height: 1.2;
     }
-`;
+`
 
 export const StyledRed = styled.span`
     color: #C00000;
-`;
+`
 
 export const StyledImg = styled.img<StyledImgProps>`
     position: absolute;
@@ -55,4 +55,4 @@ export const StyledImg = styled.img<StyledImgProps>`
     @media (max-width: 768px) {
         top: ${props => (props.down ? '60%' : props.up ? '85%' : '0')};
     }
-`;
+`

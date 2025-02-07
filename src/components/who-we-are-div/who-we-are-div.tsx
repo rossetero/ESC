@@ -1,5 +1,5 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
+import React from "react"
+import { useTranslation } from "react-i18next"
 import {
   StyledGlobalDiv,
   StyledDiv,
@@ -7,10 +7,10 @@ import {
   StyledP,
   StyledRed,
   StyledLosung
-} from "./who-we-are-div.styled";
+} from "./who-we-are-div.styled"
 
 export const WhoWeAreDiv = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <StyledGlobalDiv>
@@ -32,5 +32,5 @@ export const WhoWeAreDiv = () => {
       </StyledDiv>
       <StyledLosung><StyledRed>HEY,</StyledRed> LET&apos;S GO</StyledLosung>
     </StyledGlobalDiv>
-  );
+  )
 }

@@ -1,26 +1,24 @@
-import React from "react";
-// import {  MainWrapper, GamesHeader } from "../components/gamestyle"; /*перенесенные стили .css*/
-import { Caption } from "../components/caption";
-import { Header } from "../components/header";
-import { Footer } from "../components/footer";
-import { GamesBlock } from "../components/games-block";
-import { Main1 } from "../components/common";
-import { GamesHeader } from "../components/games-header";
+import React from "react"
+import { Header } from "../components/header"
+import { Footer } from "../components/footer"
+import { GamesBlock } from "../components/games-block"
+import { Main1 } from "../components/common"
+import { GamesHeader } from "../components/games-header"
 
 const GamesPage = () => {
-    return (
-        <>
-            <Header />
+  return (
+    <>
+      <Header />
 
-            <GamesHeader />
+      <GamesHeader />
 
-            <Main1>
-                <GamesBlock />
-            </Main1>
+      <Main1>
+        <GamesBlock />
+      </Main1>
 
             
 
-            {/* <MainWrapper>
+      {/* <MainWrapper>
                 <GamesHeader>
                     <div>
                         <Caption>
@@ -31,9 +29,9 @@ const GamesPage = () => {
                 </GamesHeader>
                 <GamesBlock /> 
             </MainWrapper> */}
-            <Footer />
-        </>
-    );
-};
+      <Footer />
+    </>
+  )
+}
 
-export default GamesPage;
+export default GamesPage

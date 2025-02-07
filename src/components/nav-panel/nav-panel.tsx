@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "../link";
+import React from "react"
+import { Link } from "../link"
 import { StyledPanel } from './nav-panel.styled'
-import { URLs } from "../../__data__/urls";
+import { URLs } from "../../__data__/urls"
 
 const navList = [
   { title: "home", href: URLs.baseUrl },
@@ -9,7 +9,7 @@ const navList = [
   { title: "4u2k", href: URLs.ui.u2k.url },
   { title: "b2b", href: URLs.ui.b2b.url },
   { title: "games", href: URLs.ui.games.url },
-];
+]
 
 export const NavPanel = (props) => {
   return (
@@ -20,10 +20,10 @@ export const NavPanel = (props) => {
             <li key={element.href}>
               <Link href={element.href}>{element.title}</Link>
             </li>
-          ) : null;
+          ) : null
         })}
 
       </StyledPanel>
     </nav>
-  );
-};
+  )
+}

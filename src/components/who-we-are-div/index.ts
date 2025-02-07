@@ -1,1 +1,1 @@
-export { WhoWeAreDiv } from './who-we-are-div';
+export { WhoWeAreDiv } from './who-we-are-div'

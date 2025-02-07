@@ -1,35 +1,35 @@
 
-import React, { useState } from 'react';
-import { ClientContactForm } from '../client-contact-form';
-import { ModalOverlay, StyledInviteButton } from './invite-button.styled';
+import React, { useState } from 'react'
+import { ClientContactForm } from '../client-contact-form'
+import { ModalOverlay, StyledInviteButton } from './invite-button.styled'
 
 export const InviteButton = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const openModal = () => {
-      setIsOpen(true);
-  };
+    setIsOpen(true)
+  }
 
   const closeModal = () => {
-      setIsOpen(false);
-  };
+    setIsOpen(false)
+  }
 
   const handleModalClick = (event) => {
-      if (event.target === event.currentTarget) {
-          setIsOpen(false);
-      }
-  };
+    if (event.target === event.currentTarget) {
+      setIsOpen(false)
+    }
+  }
 
   return (
-        <>
-            <StyledInviteButton onClick={openModal}>{children}</StyledInviteButton>
-            {isOpen && (
-                <ModalOverlay onClick={handleModalClick}>
-                    <ClientContactForm isOpen={true} onClose={closeModal} />
-                </ModalOverlay>
-            )}
-        </>
-  );
-};
+    <>
+      <StyledInviteButton onClick={openModal}>{children}</StyledInviteButton>
+      {isOpen && (
+        <ModalOverlay onClick={handleModalClick}>
+          <ClientContactForm isOpen={true} onClose={closeModal} />
+        </ModalOverlay>
+      )}
+    </>
+  )
+}
 
 

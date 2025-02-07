@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 export const StyledSection = styled.section`
     margin-top: 6vw;
     margin-bottom: 6vw;
-`;
+`
 
 export const StyledDiv = styled.div`
     display: flex;
@@ -15,7 +15,7 @@ export const StyledDiv = styled.div`
         gap: 30px;
         align-items: center;
     }
-`;
+`
 
 export const StyledP = styled.p`
     font-size: 1.5vw;
@@ -28,7 +28,7 @@ export const StyledP = styled.p`
         font-size: 3vw;
         line-height: 1.2;
     }
-`;
+`
 
 export const StyledDivP = styled.section`
     font-size: 1.5vw;
@@ -41,7 +41,7 @@ export const StyledDivP = styled.section`
         font-size: 3vw;
         line-height: 1.2;
     }
-`;
+`
 
 export const StyledH2 = styled.h2`
     font-size: 7vw;
@@ -52,9 +52,9 @@ export const StyledH2 = styled.h2`
     @media (max-width: 768px) {
         padding-top: 30px;
     }
-`;
+`
 
 export const StyledRed = styled.span`
     color: #C00000;
-`;
+`
 

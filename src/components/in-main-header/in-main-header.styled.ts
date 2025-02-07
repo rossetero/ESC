@@ -1,20 +1,20 @@
-import styled from "@emotion/styled";
-import { css } from "@emotion/react";
+import styled from "@emotion/styled"
+import { css } from "@emotion/react"
 
 export const StyledInMainHeader = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
     ${(props: any) => {
-        if (props.reverse) {
-            return css`
+      if (props.reverse) {
+        return css`
                 flex-wrap: wrap-reverse;
-            `;
-        } else {
-            return css`
+            `
+      } else {
+        return css`
                 flex-wrap: wrap;
-            `;
-        }
+            `
+      }
     }}
 
     img {
@@ -29,4 +29,4 @@ export const StyledInMainHeader = styled.header`
             text-align: center;
         }
     }
-`;
+`

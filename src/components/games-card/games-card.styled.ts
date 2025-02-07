@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "@emotion/styled"
 
 export const StyledGamesCard = styled.div`
     margin: 3% 3%;
@@ -15,7 +15,7 @@ export const StyledGamesCard = styled.div`
     &:hover {
         background-color: white;
     }
-`;
+`
 
 export const StyledTitle = styled.h2`
     font-weight: 900;
@@ -27,7 +27,7 @@ export const StyledTitle = styled.h2`
     @media (max-width: 768px) {
         font-size: 4vw;
     }
-`;
+`
 
 export const StyledDescription = styled.p`
     margin-bottom: 35px;
@@ -37,4 +37,4 @@ export const StyledDescription = styled.p`
         font-size: 3vw;
         line-height: 1.2;
     }
-`;
+`

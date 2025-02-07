@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "@emotion/styled"
 
 export const StyledPriceBlock = styled.section`
     display: grid;
@@ -11,7 +11,7 @@ export const StyledPriceBlock = styled.section`
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
-`;
+`
 
 export const StyledP = styled.p`
     font-size: 1.5vw;
@@ -21,4 +21,4 @@ export const StyledP = styled.p`
         font-size: 3vw;
         line-height: 1.2;
     }
-`;
+`

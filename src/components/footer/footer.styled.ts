@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 interface StyledFooterProps {
-    noMargin?: boolean;
+  noMargin?: boolean;
 }
 
 export const StyledFooter = styled.footer<StyledFooterProps>`
@@ -57,4 +57,4 @@ export const StyledFooter = styled.footer<StyledFooterProps>`
             width: 100%;
         }
     }
-`;
+`

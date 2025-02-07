@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import { StyledInMainHeader } from './in-main-header.styled'
 
 
@@ -7,5 +7,5 @@ export const InMainHeader = (props) => {
     <StyledInMainHeader reverse={props.reverse}>
       {props.children}
     </StyledInMainHeader>
-  );
-};
+  )
+}

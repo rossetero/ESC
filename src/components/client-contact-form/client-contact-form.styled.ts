@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "@emotion/styled"
 
 
 export const ModalOverlay = styled.div`
@@ -12,7 +12,7 @@ export const ModalOverlay = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 1000;
-`;
+`
 
 /*background color для видимости цен в опциях*/
 export const StyledClientContactForm = styled.form` 

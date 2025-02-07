@@ -30,4 +30,4 @@ export const StyledButton = styled.button`
     width: 20vw;
     line-height: 1.2;
   }
-`;
+`

@@ -1,15 +1,15 @@
 import React from "react"
-import { useTranslation, Trans } from "react-i18next";
-import { Caption } from "../components/caption";
-import { Header } from "../components/header";
-import { Footer } from "../components/footer";
-import { PriceBlock } from "../components/price-block";
-import { InMainHeader } from "../components/in-main-header";
-import { Main1 } from "../components/common";
-import { StyledP } from "../components/price-block/price-block.styled";
+import { useTranslation, Trans } from "react-i18next"
+import { Caption } from "../components/caption"
+import { Header } from "../components/header"
+import { Footer } from "../components/footer"
+import { PriceBlock } from "../components/price-block"
+import { InMainHeader } from "../components/in-main-header"
+import { Main1 } from "../components/common"
+import { StyledP } from "../components/price-block/price-block.styled"
 
 const pricelist = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <>
@@ -35,7 +35,7 @@ const pricelist = () => {
 
       <Footer />
     </>
-  );
-};
+  )
+}
 
 export default pricelist
