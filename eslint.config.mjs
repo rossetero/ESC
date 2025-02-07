@@ -20,7 +20,7 @@ export default [
   { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
   { languageOptions: { globals: globals.browser } },
   {
-    ignores: ['stubs/', 'bro.config.js','assets/'],
+    ignores: ['stubs/', 'bro.config.js','src/assets/','locales/'],
   },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
