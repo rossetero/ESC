@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-  
+import { Provider } from 'react-redux';
+import { store } from './store';
 import App from './app';
 import i18next from 'i18next'
 import { i18nextReactInitConfig } from './i18next'
