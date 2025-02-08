@@ -9,7 +9,7 @@
         "build": "npm run clean && brojs build --dev",
         "build:prod": "npm run clean && brojs build",
         "clean": "rimraf dist",
-        "eslint": "npx eslint ./src/**/*",
+        "eslint": "npx eslint .",
         "eslint:fix": "npx eslint ./src/**/* --fix"
     },
     "proxy": "https://escbackend.onrender.com",
