@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next"
 import { PriceCard } from "../price-card"
 import { StyledPriceBlock } from "./price-block.styled"
 
-// ... existing code ...
 export const PriceBlock = () => {
   const { t } = useTranslation()
   const priceData = t('price.data', { returnObjects: true }) as Array<{

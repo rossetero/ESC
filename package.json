@@ -12,7 +12,6 @@
         "eslint": "npx eslint .",
         "eslint:fix": "npx eslint ./src/**/* --fix"
     },
-    "proxy": "https://escbackend.onrender.com",
     "keywords": [],
     "author": "",
     "license": "ISC",

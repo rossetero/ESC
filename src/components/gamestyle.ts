@@ -4,7 +4,6 @@ export const MainWrapper = styled.main`
   margin: 0% 10%;
 `
 
-// уникальные стили games
 export const GamesWrapper = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);

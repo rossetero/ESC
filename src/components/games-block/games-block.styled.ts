@@ -60,14 +60,3 @@ export const StyledLink = styled.a`
     text-decoration: none;
     color:#C00000;
 `
-
-//   :root {
-//       --text-red: #C00000;
-//       --secondary-color: #D9D9D9;
-//       --default-font-size: 1.5vw;
-//   }
-
-//   a {
-//       text-decoration: none;
-//       color: #000000;
-//   }

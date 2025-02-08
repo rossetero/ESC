@@ -1,30 +1,3 @@
-// import i18n from 'i18next';
-// import { initReactI18next } from 'react-i18next';
-// import russian from '../locales/russian.json';
-// import slavic from '../locales/slavic.json';
-
-// // Инициализация i18next
-// i18n
-//   .use(initReactI18next) // Подключение к React
-//   .init({
-//     resources: {
-//       russian: {
-//         translation: russian, // Подключение перевода из файла russian.json
-//       },
-//       slavic: {
-//         translation: slavic, // Подключение перевода из файла slavic.json
-//       },
-//     },
-//     lng: 'russian', // Язык по умолчанию
-//     fallbackLng: 'russian', // Язык, если текущий не найден
-//     keySeparator: false, // Ключи переводов не разделяются точкой
-//     interpolation: {
-//       escapeValue: false, // Отключаем экранирование HTML
-//     },
-//   });
-
-// export default i18n;
-
 import axios from 'axios'
 import { initReactI18next } from 'react-i18next'
 import HttpApi from 'i18next-http-backend'
