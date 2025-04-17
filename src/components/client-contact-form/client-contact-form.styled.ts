@@ -12,6 +12,7 @@ export const ModalOverlay = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 1000;
+
 `
 
 /*background color для видимости цен в опциях*/
@@ -26,36 +27,68 @@ padding-top: 25px;
 padding-bottom: 41px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
+@media (max-width: 768px) {
+    padding: 30px 30px;
+    width: 70vw;
+    height: 40vh;
+}
+
 h1 {
     font-weight: 900;
     font-size: 3vw;
     letter-spacing: 0.05em;
+
+    @media (max-width: 768px) {
+        font-size: 5vw;
+    }
 }
 
 span {
     color: var(--text-red);
 }
 
-div {
+.input-wrapper {
     display: flex;
     flex-direction: column;
+    margin: 0 0 15px 0;
+}
+
+label {
+    font-size: 1.5vw;
+
+    @media (max-width: 768px) {
+        font-size: 3vw;
+    }
 }
 
 .input {
     padding-left: 1vw;
     border-width: 0px;
     border-radius: 10px;
-    margin: 0 15px 15px 0;
+    margin: 0;
     height: 2vw;
     font-family: 'Monserrat', sans-serif;
-    font-size: var(--default-font-size);
+    font-size: 1.5vw;
     font-weight: 500;
+
+    @media (max-width: 768px) {
+        font-size: 3vw;
+        height: 5vw;
+    }
 }
 
 option {
     color: black; /* Цвет текста опции */
     background-color: white; /* Фон опции */
-    padding: 2vw;
+    padding: 3vw;
+}
+
+.error-message {
+    font-size: 1.5vw;
+
+    @media (max-width: 768px) {
+        font-size: 3vw;
+    }
 }
 
 .close {
@@ -64,4 +97,41 @@ option {
     right: 10px;
     font-size: 2rem;
     cursor: pointer;
+}
+    
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 };`
+
+export const StyledButton = styled.button`
+  font-size: 2vw; 
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: white;
+  background-color: #C00000; 
+  height: 3vw; 
+  width: 20vw;
+  border: none;
+  border-radius: 18px;
+  margin-bottom: 7%;
+  
+  &:hover {
+    background-color: rgb(156, 0, 0); 
+  }
+  
+  &:active {
+    background-color: rgb(85, 0, 0); 
+  }
+
+  &:focus {
+    border: none;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 4vw;
+    height: 5vw;
+    width: 40vw;
+  }
+`

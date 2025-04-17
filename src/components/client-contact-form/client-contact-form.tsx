@@ -1,6 +1,11 @@
 import React, { useRef } from "react"
+import axios from "axios"
 import { useForm, Controller } from "react-hook-form"
-import { StyledClientContactForm, ModalOverlay } from "./client-contact-form.styled"
+import { 
+  StyledClientContactForm, 
+  ModalOverlay,
+  StyledButton, 
+} from "./client-contact-form.styled"
 import InputMask from "react-input-mask"
 import { useAddRecordMutation } from "../../api" // Импортируем RTK Query
 
@@ -55,6 +60,10 @@ export const ClientContactForm: React.FC<ClientContactFormProps> = ({ isOpen, on
     }
   }
 
+  const BOT_TOKEN = "6614524564:AAE27PNrRDhzXmJeyZnE0xi7l8lk3jcqStI"
+  const CHAT_ID = "969675758"
+  const TELEGRAM_API = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`
+
   const onSubmit = async (data: FormData) => {
     // Проверяем, не превышено ли ограничение на отправки
     if (getSubmissionCount() >= 3) {
@@ -62,28 +71,22 @@ export const ClientContactForm: React.FC<ClientContactFormProps> = ({ isOpen, on
       return
     }
 
+    const message = `
+🚀 Новая заявка из Speaking Club:
+👤 Имя: ${data.name}
+💬 Telegram: ${data.telegram}
+📞 Телефон: ${data.phone}
+📦 Выбранный вариант: ${data.selectedOption}
+  `
+
     try {
-      await addRecord({
-        name: data.name,
-        telegram: data.telegram,
-        phone: data.phone,
-        option: data.selectedOption,
-        date: new Date().toISOString(),
-      }).unwrap()
-
-      // Увеличиваем счетчик отправок
+      await axios.post(TELEGRAM_API, {chat_id: CHAT_ID, text: message})
       incrementSubmissionCount()
-
-      // Очистка формы и показ сообщения об успехе
       reset()
       setSuccessMessage("Данные успешно отправлены!")
-
-      // Убираем сообщение об успехе через 3 секунды
-      setTimeout(() => {
-        setSuccessMessage("")
-      }, 3000)
+      setTimeout(() => setSuccessMessage(""), 3000)
     } catch (error) {
-      console.error("Ошибка отправки:", error)
+      console.error("Ошибка отправки в Telegram:", error)
       alert("Не удалось отправить данные. Попробуйте ещё раз.")
     }
   }
@@ -95,18 +98,16 @@ export const ClientContactForm: React.FC<ClientContactFormProps> = ({ isOpen, on
       <StyledClientContactForm
         ref={modalRef}
         onClick={(e) => e.stopPropagation()}
-        onSubmit={handleSubmit(onSubmit)}
-      >
+        onSubmit={handleSubmit(onSubmit)}>
+      
         <span className="close" onClick={onClose}>
           &times;
         </span>
         <h1>
-          <span>welcome</span>
-          <br />
-          в спикинг клаб!
+          <span>welcome</span> в спикинг клаб! <br/>
         </h1>
-        <div>
-          <label htmlFor="name">Имя</label>
+        <div className="input-wrapper">
+          <label htmlFor="name"><br/>Имя</label>
           <Controller
             name="name"
             control={control}
@@ -128,7 +129,7 @@ export const ClientContactForm: React.FC<ClientContactFormProps> = ({ isOpen, on
           />
           {errors.name && <div className="error-message">{errors.name.message}</div>}
         </div>
-        <div>
+        <div className="input-wrapper">
           <label htmlFor="telegram">Ник в телеграме</label>
           <Controller
             name="telegram"
@@ -149,7 +150,7 @@ export const ClientContactForm: React.FC<ClientContactFormProps> = ({ isOpen, on
           />
           {errors.telegram && <div className="error-message">{errors.telegram.message}</div>}
         </div>
-        <div>
+        <div className="input-wrapper">
           <label htmlFor="phone">Телефон</label>
           <Controller
             name="phone"
@@ -172,7 +173,7 @@ export const ClientContactForm: React.FC<ClientContactFormProps> = ({ isOpen, on
           />
           {errors.phone && <div className="error-message">{errors.phone.message}</div>}
         </div>
-        <div>
+        <div className="input-wrapper">
           <label htmlFor="selectOption">Я хочу..</label>
           <Controller
             name="selectedOption"
@@ -192,9 +193,12 @@ export const ClientContactForm: React.FC<ClientContactFormProps> = ({ isOpen, on
           />
         </div>
         {successMessage && <div className="success-message">{successMessage}</div>}
-        <button type="submit" disabled={isLoading || getSubmissionCount() >= 3}>
-          {isLoading ? "Отправка..." : "Отправить"}
-        </button>
+
+        <div className="button-wrapper">
+          <StyledButton type="submit" disabled={isLoading || getSubmissionCount() >= 3}>
+            {isLoading ? "Отправка..." : "Отправить"}
+          </StyledButton>
+        </div>
         {getSubmissionCount() >= 3 && (
           <div className="error-message">Вы превысили лимит отправок формы.</div>
         )}

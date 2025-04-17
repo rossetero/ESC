@@ -18,7 +18,7 @@ const pricelist = () => {
       <Main1>
 
         <InMainHeader>
-          <img width="606" height="472" src={require("../assets/prices/handmoney.png")} alt="" />
+          <img width="450vw" src={require("../assets/prices/handmoney.png")} alt="" />
           <div>
             <Caption><h1>OUR<span> PRICES</span></h1></Caption>
             <StyledP><Trans>{t('price.intro')}</Trans></StyledP>
